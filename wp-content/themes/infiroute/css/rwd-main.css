@@ -288,7 +288,7 @@ html:not(.ie) body.home {overflow: hidden;}
 	
 	/* INSIGHTS */
 	#logo a img {display: block;}
-	.blank_text {padding-top: 130px; padding-bottom: 30px;}
+	.blank_text {padding-top: 100px; padding-bottom: 30px;}
 	.main_insights .main_section_content_inner { vertical-align: top;}
 	.main_insights_inner,
 	.main_insights_img,
