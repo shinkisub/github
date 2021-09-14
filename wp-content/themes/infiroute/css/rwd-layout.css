@@ -462,7 +462,7 @@
 	.footer, 
 	body:not(.home) .footer { padding: 0;}
 	body.home[data-slide-index="5"] #logo{ display:none}
-	.footer, body:not(.home) .footer { padding: 0;}
+	.footer, body:not(.home) .footer { padding-top: 100px; height: 100%;}
     .footer_lang_and_family {float: none;position: relative;padding-top: 0;margin-top: 17px;}
     .footer_lang_and_family .footer_lang_container {float: none;position: absolute;left: 183px;top: 3px; display:block;}
 	.footer_lang_and_family .footer_lang_container {display: none;}
@@ -474,7 +474,7 @@
 	.footer_secondary_menu li a {font-size: 12px;padding: 6px 15px;}
 	nav.footer_primary_menu { top: 0;}
 	.footer_bottom { padding-top: 20px; margin-top: 50px; border-top: 1px solid #343434;}
-	.home .footer_primary { top: 0; margin-top: 0px;}
+	.home .footer_primary { top: 0; margin-top: 250px;}
 	.home .footer_inner{ padding-top: 40px;}
 	.family_select_title { padding: 10px 20px 12px 20px;color: #666; border-color: #666;}
 	.family_select_title svg {top: 8px;}

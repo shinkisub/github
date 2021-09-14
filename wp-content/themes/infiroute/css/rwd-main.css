@@ -245,7 +245,7 @@ html:not(.ie) body.home {overflow: hidden;}
 	.blank {width: 426px; height: 2px;}
 	.blank_text h3 {font-size: 20px;}
 	.main_insights_txt a, .main_insights_txt a:last-child {width: calc(100% - 40px);border-bottom: 1px solid #eee;}
-	.main_insights_txt h2 i {top: 0; font-size: 20px;}
+	.main_insights_txt h2 i {font-size: 20px;}
 	.main_insights_txt h2 span {width: 100%;}
 	.main_insights_txt a:last-child {border-bottom: none;}
 

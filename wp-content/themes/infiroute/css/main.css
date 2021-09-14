@@ -119,7 +119,7 @@ html.ie .home.invert[data-slide-index="4"] .main_fullpage_slider.swiper-containe
 
 .main_section_content {display: table;width: 100%;height: 100%;position: relative;z-index: 8;max-width: 1280px; margin: auto; text-align: left;}
 .main_section_content_inner {display: table-cell;vertical-align: middle;}
-.blank_text{text-align: center; position: relative;}
+.blank_text{text-align: center; position: relative;padding-bottom: 40px;}
 .blank{width: 555px; height: 4px; display: inline-block; background-color: #003051; margin: 10px 0; left: 1px; position: relative;}
 .blank_text h2 {font-size: 36px; font-weight: 500;}
 .blank_text h3 {font-size: 24px; padding-top: 5px;}
