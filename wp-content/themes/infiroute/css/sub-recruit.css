@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/*
+ * File : sub-recruit.css
+ * Author : STUDIO-JT (NICO)
+ * Guideline : JTstyle.2.0
+ *
+ * Dependency : css/reset.css
+ * css/jt-strap.css
+ *
+ * SUMMARY:
+ * 1) GLOBAL
+ * 1) 채용안내
+ * 2) 채용공고
+ * 3) 인사제도
+ * 4) ANIMATION
+ */
+
+/* **************************************** *
+ * GLOBAL
+ * **************************************** */
+ .sub_recruit_info .jt_btn_basic,
+ .sub_recruit_offer .jt_btn_basic{width: 230px;}
+
+/* **************************************** *
+ * 채용안내
+ * **************************************** */
+.sub_recruit_info_content {  padding-top: 6px;}
+.sub_recruit_info_content .sub_desc li {padding-bottom: 9px;position: relative;padding-left: 14px;}
+.sub_recruit_info_content .sub_desc li:before { position: absolute; top: 11px; left: 0; content: ""; width: 4px; height: 4px; background: #080a14; border-radius: 50%;}
+.sub_recruit_info_content .rule_box {margin-top: 42px;}
+
+ul.recruit_steps li { float: left; width: 20%; height: 100%; padding-top: 20%; position: relative; display: block; text-align: center;}
+ul.recruit_steps {width: -webkit-calc(100% + 40px);width: calc(100% + 40px);padding-bottom: 22px;margin-left: -20px;float: left;}
+ul.recruit_steps li span {position: absolute;bottom: 26%;left: 0;width: 100%;font-weight: 500;font-size: 18px; color: #0a0a0a}
+ul.recruit_steps li:before {background: #f8f8f8;content: "";position: absolute;top: 20px;bottom: 20px;left: 20px;right: 20px;border-radius: 50%;}
+ul.recruit_steps li .icon-mini-arrow {position: absolute;width: 10px;height: 10px;top: 50%;left: -4px;margin-top: -9px;-webkit-transform: scale(1.2);-ms-transform: scale(1.2);transform: scale(1.2);}
+ul.recruit_steps li:first-child .icon-mini-arrow {display: none;}
+.info-step-svg {position: absolute;top: 50%;left: 50%;height: 66px;-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);margin-top: -7%;}
+.info-step-svg.info-step-03-svg {height: 68px;}
+.info-step-svg.info-step-04-svg {height: 58px;}
+
+.sub_recruit_info h2 {font-size: 27px;font-weight: 700;position: relative;top: -6px;}
+.sub_recruit_info  .jt_btn_spread span{ top:0}
+.sub_recruit_info_content .sub_desc{ clear:both}
+.sub_recruit_info_content .rule_tit b {font-weight:700; font-size:22px;}
+
+html.ie .sub_recruit_info .jt_btn_wrap .jt_btn_spread.jt_type_03:before{ border-color:#f52f23;}
+
+
+
+/* **************************************** *
+ * 채용공고
+ * **************************************** */
+.sub_recruit_offer_content{padding-top: 7px;}
+.job_board_list {border-top: 1px solid #eaeaea;clear:both;display: table;width:100%;table-layout: fixed;}
+.job_board_list_item > a,.job_board_list_item > div {position: relative;border-bottom: 1px solid #eaeaea;}
+.job_board_rank{width: 110px;display: table-cell;vertical-align: middle;color: #0a0a0a;text-align: center; font-weight: 700;}
+.job_board_time_range {text-align: left;font-size: 14px;padding-top: 0px;font-weight: 500;letter-spacing:0; color: #0a0a0a;}
+.job_board_title_container {display: table-cell;color: #0a0a0a;width: 100%;vertical-align: middle;padding: 45px 32px 45px;}
+.job_board_title_inner { position: relative;}
+.job_board_cat { color: #666; font-size: 15px;}
+.job_board_state{display: table-cell;vertical-align:middle;width: 110px;text-align: center;}
+.job_board_state > span {font-size: 13px;line-height: 19px;width: 74px;display: inline-block;padding: 5px 2px 6px 2px;vertical-align: top;color: #fff;background: #0a0a0a;text-align: center;position: relative;left: -3px;}
+.job_board_title{font-size: 22px;font-weight:500;margin-top: -1px;max-width: -webkit-calc(100% - 65px);max-width: calc(100% - 65px);vertical-align: middle;display: block;margin: 5px 0 20px;}
+.job_board_list_item {clear: both;position: relative;display: table-row;}
+.job_board_list_item > a:after { content: ""; display: table; clear: both; }
+.job_board_state > span.job_board_state_close {background: #bbb;}
+.job_board_state > span.job_board_state_dminus {background: #f52f23;}
+.job_board_list a .jt_arrow {  display: inline-block; top: 0;}
+.job_board_list a .jt_arrow_btn {margin-left: 0;opacity: 0;-webkit-transform: translate(-10px,0);-ms-transform: translate(-10px,0);transform: translate(-10px,0);-webkit-transition: opacity 300ms, -webkit-transform 500ms;transition: opacity 300ms, -webkit-transform 500ms;transition: opacity 300ms, transform 500ms;transition: opacity 300ms, transform 500ms, -webkit-transform 500ms;height:9px;position: absolute;right: 10px;top: 50%;z-index: 99;margin-top: -10px;}
+.job_board_list a .jt_arrow_btn span {vertical-align:middle;}
+.job_board_list a .jt_arrow_btn:after {line-height:0.28; }
+.job_board_list a .jt_arrow_btn svg path { fill: #0a0a0a}
+html.ie .job_board_list a .jt_arrow_btn {margin-top:-13px;}
+html.mobile .job_board_list a .jt_arrow_btn {display: none;}
+.desktop .job_board_list a:hover .jt_arrow_btn { opacity: 1;  -webkit-transform: translate(0,0);  -ms-transform: translate(0,0);  transform: translate(0,0);}
+
+html.ie .job_board_state > span {padding-top:5px; padding-bottom:6px;}
+html.ie .sub_recruit_offer .jt_btn_wrap .jt_btn_spread.jt_type_03:before{ border-color:#f52f23;}
+
+/* RECRUIT SINGLE  */
+.sub_recruit_offer .jt_btn_wrap{ padding-top: 75px;}
+h2.single_offer_list_title{ margin-bottom: 0}
+.single-offer .single_meta { padding-top: 0; margin-bottom: 8px;}
+.single-offer .single_meta i {font-style: normal; background: #0a0a0a; color: #fff; font-size: 14px; padding: 2px 12px 4px; margin-right: 20px;}
+.single-offer h2 {font-size: 24px;font-weight: 700;padding-bottom: 10px;border-bottom: 2px solid #0a0a0a;margin-top: 71px;}
+html.ie .single-offer .single_meta i {padding-top:2px; padding-bottom:4px;}
+html.safari .single-offer .single_meta i {padding-top:4px; padding-bottom:2px;}
+.jt_single_offer .single_content {margin-top:0;}
+.jt_single_offer ul.offer_jobs_list {margin-top:0;margin-bottom:26px;}
+.jt_single_offer .single_offer_inner ul.offer_jobs_list {margin-bottom:0;}
+/*.jt_single_offer .single_offer_inner ul.offer_jobs_list:last-child {margin-bottom:26px;}*/
+.jt_single_offer .offer_job_desc ul {margin-top:0; margin-bottom:0;}
+ul.offer_jobs_list { margin: 0; display: table; width: 100%; table-layout: fixed; border-top: 1px solid #0a0a0a;}
+ul.offer_jobs_list.offer_jobs_list_first{ border:none;}
+ul.offer_jobs_list > li { display: table-row;}
+.offer_job_title, 
+.offer_job_desc { display: table-cell; vertical-align: top; text-align: left; padding: 24px 13px 26px;}
+ul.offer_jobs_list > li:before { display: none;}
+.single_content h3.offer_job_title { font-size: 18px; width: 250px; padding-left: 0px;}
+html.ie .offer_job_title, html.ie .offer_job_desc {padding-top:26px; padding-bottom:20px;}
+
+.jt_single_offer .single_content ul.offer_jobs_list:last-child li:last-child .offer_job_desc {padding-bottom:0;}
+
+html.ios .single-offer .single_meta i {padding:3px 12px 2px;}
+
+.single_content .offer_section_desc .offer_process {margin-top: -1px;margin-bottom: 10px;max-width:790px;font-size: 0;text-align: center;}
+.offer_section_desc .offer_process li {float: left;width: 20%;height: 100%;padding-top: 20%;position: relative;display: block;margin:0;}
+.offer_section_desc .offer_process li:nth-child(5n+1):not(.offer_process_00) { margin-left: 23px; }
+.offer_section_desc .offer_process li span { position: absolute; top: 50%; left: 0; width: 100%; font-weight: 500; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); font-size: 17px;}
+.offer_section_desc .offer_process li:before { background: #f5f5f5; content: ""; position: absolute; top: 20px; bottom: 20px; left: 20px; right: 20px; border-radius: 50%;}
+.offer_section_desc .offer_process li.offer_process_last:before { background: #0a0a0a;}
+.offer_section_desc .offer_process li.offer_process_last {  color: #fff;}
+.offer_section_desc .offer_process li .icon-mini-arrow {position: absolute;width: 10px;height: 10px;top: 50%;left: -4px;margin-top: -4px;-webkit-transform: scale(1.2);-ms-transform: scale(1.2);transform: scale(1.2);}
+.offer_section_desc .offer_process li:first-child .icon-mini-arrow { display: none;}
+.offer_section_desc .offer_process:after {content: ""; display: table; clear: both;}
+
+.offer_section_desc .single-offer ol.offer_process:not(.jt_gallery) {max-width: 785px;}
+.offer_section_desc .single-offer ul:not(.jt_gallery){  margin-bottom: 0px;}
+.single_content .offer_section_desc ul {margin-top:0; margin-bottom: 70px;}
+.single_content .offer_section_desc:last-child ul {margin-bottom:0;}
+
+.single-offer .single_content .offer_section_desc h4 {font-size: 17px;margin-top: 0;margin-bottom: 6px;}
+
+ul.offer_jobs_list > li .offer_job_title, 
+ul.offer_jobs_list > li .offer_job_desc { border-top: 1px solid #eaeaea;}
+ul.offer_jobs_list > li:first-child .offer_job_title, 
+ul.offer_jobs_list > li:first-child .offer_job_desc{ border-top: none;}
+
+.jt_single_offer .single_header_cat { padding-bottom: 36px;}
+.jt_single_offer .single_meta > span { font-size: 16px; padding: 0;letter-spacing: 0.03em;}
+.jt_single_offer .single_header { padding-bottom: 59px;}
+.jt_single_offer .single_content ul li {line-height: 1.6;margin: 6px 0;}
+.jt_single_offer .single_content ul li:before { top: 12px;}
+.jt_single_offer .single_content ul li:first-child {margin-top:0}
+.jt_single_offer .single_content ul li:last-child {margin-bottom:0}
+
+.jt_single_offer .single_content a:not(.jt_btn_basic) { color: #0a0a0a; border-bottom-color: #0a0a0a;}
+html.desktop .jt_single_offer .single_content a:not(.jt_btn_basic):hover { color: #f52f23; border-bottom-color: #f52f23;}
+
+.jt_single_offer .download_files_list {margin-bottom:-6px;}
+.jt_single_offer .jt_btn_wrap.jt_btn_wrap_primary {padding-top: 96px;}
+
+html.ie .jt_single_offer .jt_btn_wrap .jt_btn_spread.jt_type_03:before{ border-color:#f52f23;}
+/*
+.jt_single_offer .offer_jobs_table {width:100%;max-width:750px; margin-bottom:60px; border-top:none; letter-spacing:-0.05em; border-top:2px solid #0a0a0a}
+.jt_single_offer .single_offer_list_title + .offer_jobs_table {border-top:none;}
+.jt_single_offer .offer_jobs_table th {background:#fff; color:#080a14;}
+.jt_single_offer .offer_jobs_table thead th {font-size:20px;font-weight:600;padding: 23px 0;}
+.jt_single_offer .offer_jobs_table tbody th {font-size:17px;font-weight:600;padding: 20px 9px 20px;}
+.jt_single_offer .offer_jobs_table tbody th:before {height:18px; margin-top:-9px;}
+.jt_single_offer .offer_jobs_table tbody th:first-child {width:31%}
+.jt_single_offer .offer_jobs_table td {padding-left:25px; padding-right:25px; color:#080a14; text-align:left;}
+.jt_single_offer .offer_jobs_table td:first-child {font-size:17px; font-weight:600;text-align:center;}
+.jt_single_offer .offer_jobs_table td > ul {margin: 0px 6px;}
+.jt_single_offer .offer_jobs_table td > ul > li {margin-bottom: 23px;padding-left:0;}
+.jt_single_offer .offer_jobs_table td > ul > li:before {display:none;}
+.jt_single_offer .offer_jobs_table td > ul > li > b {font-size:17px;}
+.jt_single_offer .offer_jobs_table td > ul > li > ul {margin: 5px 0 0;}
+.jt_single_offer .offer_jobs_table td > ul > li > ul > li {font-size:16px;margin: 0 0 3px;}
+*/
+
+.jt_single_offer .single_offer_list_title + .offer_jobs_table_wrap .offer_jobs_table { margin-bottom:60px; }
+.jt_single_offer .single_offer_list_title + .offer_jobs_table_wrap .offer_jobs_table:first-child {border-top:none;}
+.jt_single_offer .offer_jobs_table {width:100%;max-width:750px;position: relative;border-top: 2px solid #222;}
+.jt_single_offer .offer_jobs_table caption {width: 1px;height: 1px;position: absolute;top: 0;left: 0;font-size: 0;line-height: 0;overflow: hidden;}
+.jt_single_offer .offer_jobs_table th {text-align:center;padding: 24px 30px;position: relative;vertical-align: middle;font-size: 17px;font-weight: 600;background:#fff; border-bottom: 2px solid #ddd;}
+.jt_single_offer .offer_jobs_table tbody th { padding: 19px 30px;}
+.jt_single_offer .offer_jobs_table tbody th:first-child {width:31%}
+.jt_single_offer .offer_jobs_table tbody th:before {height:17px; margin-top:-9px;}
+.jt_single_offer .offer_jobs_table td {padding: 23px 30px;vertical-align: middle;font-size: 16px;border-bottom: 1px solid #eaeaea;border-left: 1px solid #eaeaea;}
+.jt_single_offer .offer_jobs_table td:first-child {border-left: none;}
+.jt_single_offer .offer_jobs_table td b {font-weight: 600;color: #222;}
+
+.jt_single_offer .offer_jobs_table thead th {border-bottom-width: 1px;font-size: 18px;}
+.jt_single_offer .offer_jobs_table tbody td {padding: 19px 34px 20px;}
+.jt_single_offer .offer_jobs_table tbody td:first-child{text-align: center;font-size: 17px;font-weight: 400;}
+
+.jt_single_offer .offer_jobs_table td > ul {margin: 0px 6px; text-align:left;}
+.jt_single_offer .offer_jobs_table td > ul > li {margin-bottom: 23px;padding-left:0;}
+.jt_single_offer .offer_jobs_table td > ul > li:before {display:none;}
+.jt_single_offer .offer_jobs_table td > ul > li > b {font-size:17px; line-height:1.5; display:block;}
+.jt_single_offer .offer_jobs_table td > ul > li > ul {margin: 5px 0 0;}
+.jt_single_offer .offer_jobs_table td > ul > li > ul > li {font-size:16px;margin: 0 0 3px;}
+.jt_single_offer .offer_jobs_table td > ul > li > ul > li:before {top:11px;}
+
+html.ie .jt_single_offer .offer_jobs_table tbody td {padding-top:22px; padding-bottom:17px;}
+html.edge .jt_single_offer .offer_jobs_table td > ul > li > ul > li:before {top:12px;}
+
+
+/* **************************************** *
+ * 인사제도
+ * **************************************** */
+.page-template-recruit-system .main_container {padding-bottom:0;}
+.sub_recruit_system h2 {font-size: 35px;margin-top: -3px;line-height: 1.48;letter-spacing: -0.06em;}
+.system_sub_title {font-size: 27px;font-weight: 700;}
+.system_sub_dec {font-size: 17px;margin-top: 8px;letter-spacing: -0.06em;}
+.system_pay {font-size: 0;margin-top: 24px;margin-bottom: 120px;}
+.system_pay ul {margin-top: 10px;}
+.system_pay li {display: inline-block;width:48.36%;margin-right:3.28%;border:1px solid #eaeaea;text-align: center;padding: 50px 0 44px;}
+.system_pay li:nth-child(2n) {margin-right:0;}
+.system_pay li .system_pic_container {position: relative;width:120px; height:120px;margin: 0 auto 13px;}
+.system_pay li .system_pic_container i {position:absolute; width:24px; height:24px; border-radius: 50%;}
+.system_pay li .system_pic_container i.system_pic_money_01 {background-color:#0a0a0a;top: 20px;left: 19px;-webkit-animation: system-monye-01 3.2s infinite;animation: system-monye-01 3.2s infinite;}
+.system_pay li .system_pic_container i.system_pic_money_02 {background-color:#f53024;top: 80px;right: 18px;-webkit-animation: system-monye-02 3.2s infinite;animation: system-monye-02 3.2s infinite;}
+
+.system_pay li .system_pic_performance {-webkit-animation: system-performance 12.8s infinite;animation: system-performance 12.8s infinite;-webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+.system_pay li .system_pic_container i.system_pic_performance_01 {background-color:#0a0a0a;top: 27px;right: 47px;-webkit-animation: system-performance-01 3.2s infinite;animation: system-performance-01 3.2s infinite;}
+.system_pay li .system_pic_container i.system_pic_performance_02 {background-color:#ddd;top: 45px;left: 67px;-webkit-animation: system-performance-02 3.2s infinite;animation: system-performance-02 3.2s infinite;}
+.system_pay li .system_pic_container i.system_pic_performance_03 {background-color:#444;top: 63px;right: 47px;-webkit-animation: system-performance-03 3.2s infinite;animation: system-performance-03 3.2s infinite;}
+.system_pay li .system_pic_container i.system_pic_performance_04 {background-color:#f53024;top: 45px;left: 31px;-webkit-animation: system-performance-04 3.2s infinite;animation: system-performance-04 3.2s infinite;}
+
+.system_pay li b {font-size: 20px;font-weight: 700;color: #0a0a0a;}
+.system_pay li p {font-size: 17px;line-height:1.7;margin-top: 10px;}
+
+.system_welfare {background-color:#f8f8f8;padding: 114px 0 200px;}
+.system_welfare_list_container {margin-top: 16px;}
+.system_welfare_list {margin-top: 71px;}
+.system_welfare_list:first-child {margin-top:0;}
+.system_welfare_list h4 {font-size: 22px;font-weight: 700;color: #0a0a0a;}
+.system_welfare_list h4 span {font-size: 20px;color: #f52f23;padding-right: 10px;font-weight: 800;}
+.system_welfare_list ul {margin-top: 10px;font-size: 0;}
+.system_welfare_list ul:after {content:''; display:table; clear:both;}
+.system_welfare_list ul li {width:31.14%;margin-right: 3.285%;background-color:#fff;float: left;text-align: center;padding: 80px 0 65px;}
+.system_welfare_list ul li:nth-child(3n) {margin-right:0;}
+.system_welfare_list ul li figure {width:118px; margin:0 auto;}
+.system_welfare_list ul li figure svg {max-width: 100%; }
+.system_welfare_list_content {display: table;margin: 34px auto 0;}
+.system_welfare_list_content_inner {display:table-cell; vertical-align:middle;}
+.system_welfare_list_content b {font-size: 18px;color: #0a0a0a;}
+.system_welfare_list_content p {font-size:17px;margin-top: 14px;}
+html.ie .system_welfare_list_content p {line-height: 1.5;}
+ 
+
+ 
+
+/* **************************************** *
+ * ANIMATION
+ * **************************************** */
+/*@keyframes system-monye-01 {
+    0% {top:16px; left:16px;}
+	25% {top:76px; left:16px;}
+	50% {top:76px; left:76px;}
+	75% {top: 76px; left:16px;}
+	100% {top:16px; left:16px;}
+}
+
+@keyframes system-monye-02 {
+    0% {top:76px; right:16px;}
+	25% {top:16px; right:16px;}
+	50% {top:16px; right:76px;}
+	75% {top: 16px; right:16px;}
+	100% {top:76px; right:16px;}
+}*/
+
+@-webkit-keyframes system-monye-01 {
+	0% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+	50% {-webkit-transform: translate3d(0, 55px,0); -ms-transform: translate3d(0, 55px,0); transform: translate3d(0, 55px,0);}
+	100% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+}
+
+@keyframes system-monye-01 {
+	0% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+	50% {-webkit-transform: translate3d(0, 55px,0); -ms-transform: translate3d(0, 55px,0); transform: translate3d(0, 55px,0);}
+	100% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+}
+@-webkit-keyframes system-monye-02 {
+	0% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+	50% {-webkit-transform: translate3d(0, -55px,0); -ms-transform: translate3d(0, -55px,0); transform: translate3d(0, -55px,0);}
+	100% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+}
+@keyframes system-monye-02 {
+	0% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+	50% {-webkit-transform: translate3d(0, -55px,0); -ms-transform: translate3d(0, -55px,0); transform: translate3d(0, -55px,0);}
+	100% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0,0);}
+}
+@-webkit-keyframes system-performance {
+	0% {-webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0);}
+	12.5% {-webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+	25% {-webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg);}
+	37.5% {-webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg);}
+	50% {-webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg);}
+	62.5% {-webkit-transform: rotate(-225deg); -ms-transform: rotate(-225deg); transform: rotate(-225deg);}
+	75% {-webkit-transform: rotate(-270deg); -ms-transform: rotate(-270deg); transform: rotate(-270deg);}
+	87.5% {-webkit-transform: rotate(-315deg); -ms-transform: rotate(-315deg); transform: rotate(-315deg);}
+	100% {-webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg);}
+}
+
+@keyframes system-performance {
+	0% {-webkit-transform: rotate(0); -ms-transform: rotate(0); transform: rotate(0);}
+	12.5% {-webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg);}
+	25% {-webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg);}
+	37.5% {-webkit-transform: rotate(-135deg); -ms-transform: rotate(-135deg); transform: rotate(-135deg);}
+	50% {-webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg);}
+	62.5% {-webkit-transform: rotate(-225deg); -ms-transform: rotate(-225deg); transform: rotate(-225deg);}
+	75% {-webkit-transform: rotate(-270deg); -ms-transform: rotate(-270deg); transform: rotate(-270deg);}
+	87.5% {-webkit-transform: rotate(-315deg); -ms-transform: rotate(-315deg); transform: rotate(-315deg);}
+	100% {-webkit-transform: rotate(-360deg); -ms-transform: rotate(-360deg); transform: rotate(-360deg);}
+}
+@-webkit-keyframes system-performance-01 {
+	0% {-webkit-transform: translate3d(0, -17px ,0); -ms-transform: translate3d(0, -17px ,0); transform: translate3d(0, -17px ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(0, -17px ,0); -ms-transform: translate3d(0, -17px ,0); transform: translate3d(0, -17px ,0);}
+}
+@keyframes system-performance-01 {
+	0% {-webkit-transform: translate3d(0, -17px ,0); -ms-transform: translate3d(0, -17px ,0); transform: translate3d(0, -17px ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(0, -17px ,0); -ms-transform: translate3d(0, -17px ,0); transform: translate3d(0, -17px ,0);}
+}
+
+@-webkit-keyframes system-performance-02 {
+	0% {-webkit-transform: translate3d(17px, 0,0); -ms-transform: translate3d(17px, 0,0); transform: translate3d(17px, 0 ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(17px, 0,0); -ms-transform: translate3d(17px, 0,0); transform: translate3d(17px,0 ,0);}
+}
+
+@keyframes system-performance-02 {
+	0% {-webkit-transform: translate3d(17px, 0,0); -ms-transform: translate3d(17px, 0,0); transform: translate3d(17px, 0 ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(17px, 0,0); -ms-transform: translate3d(17px, 0,0); transform: translate3d(17px,0 ,0);}
+}
+
+@-webkit-keyframes system-performance-03 {
+	0% {-webkit-transform: translate3d(0, 17px ,0); -ms-transform: translate3d(0, 17px ,0); transform: translate3d(0, 17px ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(0, 17px ,0); -ms-transform: translate3d(0, 17px ,0); transform: translate3d(0, 17px ,0);}
+}
+
+@keyframes system-performance-03 {
+	0% {-webkit-transform: translate3d(0, 17px ,0); -ms-transform: translate3d(0, 17px ,0); transform: translate3d(0, 17px ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(0, 17px ,0); -ms-transform: translate3d(0, 17px ,0); transform: translate3d(0, 17px ,0);}
+}
+
+@-webkit-keyframes system-performance-04 {
+	0% {-webkit-transform: translate3d(-17px, 0 ,0); -ms-transform: translate3d(-17px, 0 ,0); transform: translate3d(-17px, 0 ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(-17px, 0 ,0); -ms-transform: translate3d(-17px, 0 ,0); transform: translate3d(-17px,0 ,0);}
+}
+
+@keyframes system-performance-04 {
+	0% {-webkit-transform: translate3d(-17px, 0 ,0); -ms-transform: translate3d(-17px, 0 ,0); transform: translate3d(-17px, 0 ,0);}
+	50% {-webkit-transform: translate3d(0, 0,0); -ms-transform: translate3d(0, 0,0); transform: translate3d(0, 0 ,0);}
+	100% {-webkit-transform: translate3d(-17px, 0 ,0); -ms-transform: translate3d(-17px, 0 ,0); transform: translate3d(-17px,0 ,0);}
+}
+

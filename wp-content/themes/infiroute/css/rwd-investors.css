@@ -1,0 +1,401 @@
+@charset "utf-8";
+
+/*
+ * File       : rwd-investors.css
+ * Author     : STUDIO-JT (KMS)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1660px
+ * **************************************** */
+@media(max-width: 1660px){
+
+	/* 재무재표 */
+	.financial_head {padding: 7px 0 45px;}
+	.financial_desc { font-size: 13px; padding-left: 18px; top: -3px; }
+	.financial_title { font-size: 22px; }
+	#jt_chart_category > li { padding-left: 27px; }
+	#jt_chart_category > li > span { font-size: 12px; }
+	#jt_chart_category > li > span:before { width: 10px; height: 10px; position: relative; top: 1px; margin-right: 5px; }
+	.financial_chart { height: 420px; }
+	#jt_chart_ground .item {width: 54px;}
+	#jt_chart_ground .item:nth-child(1) .annotation { font-size: 19px; }
+	#jt_chart_ground .item .annotation { font-size: 11px; }
+	#jt_chart_ground .item .bar { width: 16px; }
+	#jt_chart_haxis > span { font-size: 18px; line-height: 70px; }
+	#jt_chart_vaxis {width: 44px;}
+	#jt_chart_vaxis > span { font-size: 11px; }
+	#jt_chart_board {width: calc(100% - 54px); width: -webkit-calc(100% - 54px);}
+	.financial_data_wrap {padding-top: 45px;}
+	.financial_table_unit { font-size: 12px; }
+	.financial_data_filter { width: 220px; }
+	.financial_data_filter nav button { font-size: 16px; }
+	.financial_data_filter nav button:before {height: 12px; top: 16px;}
+	.financial_data_filter_year { max-width: 130px; margin-top: 12px; }
+	.financial_data_filter_year .selectric .label { font-size: 22px; }
+	.financial_data_filter_year .selectric-items li { font-size: 15px; padding: 8px 15px; }
+	.financial_data_filter_year .selectric-items li:first-child { padding-top: 17px; }
+	.financial_data_filter_year .selectric-items li.last { padding-bottom: 17px; }
+	.financial_table_container { width: -webkit-calc(100% - 220px); width: calc(100% - 220px); }
+	.financial_table th { font-size: 16px; padding: 16px 20px; }
+	.financial_table td { padding: 16px 20px 18px; font-size: 14px; }
+	.financial_table td:first-child { font-size: 15px; padding: 16px 20px 18px; }
+	.page-template-jemu .selectric .button:after { font-size: 13px; }
+
+	html.ie .financial_table td:first-child {padding: 17px 20px; }
+    html.mobile .financial_data_filter_year select {font-size:22px;}
+    html.mobile .financial_data_filter_year:before {font-size:13px; top:-7px;}
+	
+	/* 공시정보 */
+	.jt_dart_list_wrap .jt_board_title_cat {font-size: 12px; padding-top: 8px;}
+	.jt_dart_list_wrap .jt_board_author {font-size: 15px;}
+	.dart_regulation_info_btn span {top: auto;}
+	
+	/* 주가정보 */
+	.jtstock_title { font-size: 22px; }
+	.jtstock_price_time time { font-size: 13px; }
+	.jtstock_price_time time span { font-size: 13px; }
+	.jtstock_value b { font-size: 40px; margin-left: 14px; }
+	.jtstock_value.jtstock_down .jtstock_icon {top: 4px}
+    html.ios .jtstock_value.jtstock_down .jtstock_icon {top:2px;}
+
+	.jtstock_horizontal_list > li > b { font-size: 16px; padding: 18px 0; }
+	.jtstock_horizontal_list > li > span { font-size: 16px; padding: 16px 0; }
+	.jtstock_horizontal_list .jtstock_icon:after { border-width: 5px;}
+
+	.jtstock_vertical_list > li > b { font-size: 16px; padding-bottom: 13px;}
+	.jtstock_vertical_list > li > span { font-size: 16px; padding-top: 12px; }
+
+	.jtstock_up .jtstock_icon:after {border-width: 6px; border-bottom-width: 8px;}
+	.jtstock_up.jtstock_horizontal_list .jtstock_icon:after { border-bottom-width: 7px; }
+	.jtstock_down .jtstock_icon:after {border-width: 6px; border-top-width: 8px;}
+	.jtstock_down.jtstock_horizontal_list .jtstock_icon:after { border-top-width: 7px; }
+
+	.jtstock_price_cell:nth-child(2) { padding-left: 48px; }
+	.jtstock_price_cell:nth-child(1) { padding-right: 32px; }
+
+	.jtstock_table_outer .jtstock_info_table td:first-child { font-size: 16px; padding: 20px 30px 19px; }
+	.jtstock_table td { font-size: 14px; padding: 20px 28px; }
+	.jtstock_table_tab_menu {margin-left: -18px; margin-top: 76px;}
+	.jtstock_table_tab_menu li:first-child:before {height: 12px; margin-top: 0;}
+	.jtstock_table_tab_menu li a {font-size: 16px; padding: 10px 18px;}
+	.jtstock_table th { font-size: 15px; }
+	.jtstock_table tbody th { padding: 14px 28px; }
+	.jtstock_info_table_01 thead th { font-size: 16px; padding: 18px 24px; }
+	.jtstock_info_table_01 tbody td:first-child { font-size: 15px; }
+	.jtstock_info_table_01 tbody td, .jtstock_info_table_01 tbody td:first-child, .jtstock_info_table_01 tbody td:last-child { padding: 16px 32px 17px; }
+
+    .jtstock_info_table_02 td { padding-left:20px; padding-right:20px;}
+    .jtstock_info_table_02 td:first-child {width:13%; padding-left:20px; padding-right:20px;}
+    .jtstock_info_table_02 td:last-child {width:22%; padding-left:20px; padding-right:20px;}
+    .jtstock_info_table_02 td:nth-child(3) {width:12%;}
+    .jtstock_info_table_02 td.jtstock_up_or_down {padding-left:20px; text-align:center;}
+    .jtstock_info_table_02 .jtstock_icon {padding-right:5px;}
+	table.jtstock_info_table_02 tbody td {padding-right:23px}
+	
+	/* IR자료실 */
+	.ir_list .jt_board_notice { font-size: 12px; width: 52px; height: 24px; line-height: 24px; top: auto; }
+	html.ie .ir_list .jt_board_notice {line-height: 24px; }
+	html.safari .ir_list .jt_board_notice {line-height: 26px; }
+	html.ios .ir_list .jt_board_notice{line-height: 26px;}
+	.ir_list_num {font-size: 14px; width: 90px; left: 12px;}
+	.ir_list_cat {font-size: 16px; left: 126px;}
+	.ir_list_title { padding: 35px 220px 34px 320px; }
+	.ir_list_title h2 { font-size: 18px; }
+	.ir_list_date { font-size: 12px; right: 90px; }
+	.ir_list_arrow { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); right: 41px; }
+	.ir_list_arrow svg { width: 9px; }
+	.ir_list_download {margin-top: -25px; right: 30px;}
+	.ir_list_download .jt_btn_icon span { font-size: 14px; }
+	.ir_accordion_content h3 { font-size: 15px; padding: 26px 300px 27px 126px;}
+	.ir_accordion_content .jt_btn_icon { min-width: 150px; padding: 15px 31px 17px 20px; }
+	
+	/* 주주환원 */
+    .investor_return_title { font-size: 22px; margin-bottom: 12px; }
+    .investor_return_desc {font-size:14px;}
+
+}
+
+
+
+/* **************************************** *
+ * 1240px
+ * **************************************** */
+@media(max-width: 1240px){
+
+    /* 주가정보 */
+    .jtstock_info_table_02 td { padding-left:8px; padding-right:8px;}
+    .jtstock_info_table_02 td:first-child {width:13%; padding-left:8px; padding-right:8px;}
+    .jtstock_info_table_02 td:last-child {width:22%; padding-left:8px; padding-right:8px;}
+    .jtstock_info_table_02 td:nth-child(3) {width:12%;}
+    .jtstock_info_table_02 td.jtstock_up_or_down {padding-left:8px;}
+    .jtstock_info_table_02 .jtstock_icon {padding-right:5px;}
+	table.jtstock_info_table_02 tbody td {padding-right:1.94%}
+	
+	/* 주주환원 */
+    .sub_investor_return .jtstock_table td {padding-left:15px; padding-right:15px;}
+
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media(max-width: 1023px){
+
+    /* 재무정보 */
+    .financial_data_filter {width:170px;}
+    .financial_table_container { width: -webkit-calc(100% - 170px); width: calc(100% - 170px);}
+    .financial_table td:first-child {word-break: break-word;}
+
+    /* 주가정보 */
+    .jtstock_price_cell:nth-child(1) { padding-right:20px;}
+    .jtstock_price_cell:nth-child(2) { padding-left:32px;}
+    .jtstock_value {padding-right:10px;}
+    .jtstock_value .jtstock_icon {left:0;}
+    .jtstock_icon {padding-right:0;}
+
+    .jtstock_table_outer .jtstock_info_table td:first-child { padding-left:20px; padding-right:20px; font-size:15px;}
+    .jtstock_up_or_down.jtstock_up .jtstock_icon:after { border-width: 4px; border-bottom-width: 5px;}
+    .jtstock_up_or_down.jtstock_down .jtstock_icon:after { border-width: 4px; border-top-width: 5px;}
+
+    /* IR 자료실 */
+    .ir_list_num {width:60px;}
+    .ir_list_cat {left:90px; width: 120px;}
+    .ir_list_title {padding-left:235px; padding-right:190px; }
+    .ir_list_title h2 {font-size:17px;}
+    .ir_accordion_content h3 {padding-left:90px;}
+	
+	/* 주주환원 */
+    .investor_return_title {margin-bottom:9px;}
+    .sub_investor_return .jtstock_table th {padding:20px 10px;}
+    .sub_investor_return .jtstock_table td {padding:17px 10px;}
+    
+
+}
+
+
+
+/* **************************************** *
+ * 768px
+ * **************************************** */
+@media(max-width: 768px){
+
+    /* 전자공고 */
+    .jt_announcement_list_wrap {position:relative; padding-top: 82px; margin-top: -3px;}
+    .jt_announcement_list_wrap .jt_search {margin-top:0;}
+    .jt_announcement_list_wrap .jt_board_list tr {padding-top: 14px; padding-bottom: 25px;}
+    .jt_announcement_list_wrap .jt_board_list td.jt_board_date time {padding-top: 4px;}
+	.jt_announcement_list_wrap .jt_board_download {padding: 0; padding-bottom: 4px;}
+	.announcement_slide_item .single_slide_item_etc {bottom: 37px;}
+
+    /* 재무정보 */
+    .financial_head {padding-bottom:55px;}
+    .financial_desc {padding-left:10px; font-size: 12px;}
+    .financial_data_wrap {padding-top:25px;}
+    .financial_data_filter { float: none; width: 100%;}
+    .financial_data_filter nav { display: inline-block;  vertical-align: middle; margin-right:7px;font-size:0;}
+    .financial_data_filter nav button {padding:6px 13px; margin-right:2px; font-size:15px;}
+	.financial_data_filter nav button:before {top: 12px;}
+    .financial_data_filter_year { margin-top: 0; display: inline-block; vertical-align: middle;}
+    .financial_table_unit {padding-bottom:10px;}
+    .financial_table_container {width:100%;}    
+    .financial_table_comment {font-size:13px; padding-bottom:20px; margin-top: 13px;}
+
+    .jtstock_info_table_02 td { padding-top: 15px; padding-bottom:15px;}
+    .jtstock_info_table_02 td:first-child { padding-top: 15px; padding-bottom:15px;}
+    .jtstock_info_table_02 td:last-child { padding-top: 15px; padding-bottom:15px;width:20%;}
+    .jtstock_info_table_02 .jtstock_icon { padding-right: 3px;}
+
+	html.mobile .financial_data_filter { position: relative; }
+	html.mobile .financial_data_filter nav { padding-left: 120px; }
+	html.mobile .financial_data_filter_year { position: absolute; bottom: 5px; left: 0; }
+    html.mobile .financial_data_filter_year {margin-top:-2px;/*padding-right:50px;*/min-width:101px;}
+    html.mobile .financial_data_filter_year:before { font-size: 12px; top: -9px;right:0;}
+    html.mobile .financial_data_filter_year select {font-size:19px;}
+    html.ios .financial_data_filter nav button {margin-right:1px;}
+
+	html.mobile .financial_data_filter { float: left; }
+	html.mobile .financial_data_filter nav { float: right; padding-left: 0; margin-right: 0; }
+	html.mobile .financial_data_filter nav button:last-child { padding-right: 0; margin-right: 0; }
+
+    #jt_chart_ground .item {width:40px;}
+    #jt_chart_ground .item .bar {width:12px;}
+    #jt_chart_ground .item:nth-child(1) .annotation {font-size:16px;}
+    #jt_chart_ground .item .annotation {font-size:10px;}
+    .jt_chart_col_3 #jt_chart_haxis > span {font-size:16px; height:55px;}
+    
+    .financial_table td:first-child, .financial_table td {padding-left:10px; padding-right:10px;}
+
+    /* 공시정보 */
+    .sub_investor_dart .jt_list_count {margin-bottom:12px;}
+    .jt_dart_list_wrap { position: relative; padding-top: 54px; margin-top: -9px;}
+	.jt_dart_list_wrap .jt_board_list tr {padding: 17px 0 23px;}
+	.jt_dart_list_wrap .jt_board_list td {vertical-align: middle;}
+	html.ios	.jt_dart_list_wrap .jt_board_date time {padding-top: 4px;}
+	
+	.jt_dart_list_wrap .jt_board_author {font-size: 14px;}
+    .dart_regulation_info_btn {bottom:0;} 
+
+    /* 주가정보 */
+    .jtstock_icon {-webkit-transform: scale(0.8);-ms-transform: scale(0.8);transform: scale(0.8);}
+
+    .jtstock_price_time {margin-top:6px; margin-left:0;}
+    .jtstock_price_time time {font-size: 11px;}
+    .jtstock_price_time time:before {width: 12px;height: 12px;left: -20px;margin-top: -6px;font-size: 12px;}
+    .jtstock_price_time time span {font-size: 11px;}
+    html.ios .jtstock_price_time {margin-top:4px;} 
+
+    .jtstock_price_table {display: block;}
+    .jtstock_price_cell {display: block;width: 100%; padding:20px 0 21px;}
+    .jtstock_price_cell:nth-child(1) {padding-right: 0; border-bottom: 0; border-right: none;}
+    .jtstock_price_cell:nth-child(2) {padding-left: 0; padding-top: 4px;}
+
+    .jtstock_value { width:52%; padding-right: 15px; margin-top:-5px;}
+    .jtstock_value b {font-size: 40px;}
+    .jtstock_value .jtstock_icon {padding-right: 5px;}
+    .jtstock_value.jtstock_steady .jtstock_icon {padding-right: 17px; top:1px;}
+    html.ios .jtstock_value {margin-top:-1px;}
+
+    .jtstock_horizontal_list {width:48%;}
+    .jtstock_horizontal_list > li > b {padding: 10px 0;font-size: 14px;line-height: 15px;}
+    .jtstock_horizontal_list > li > span {padding: 10px 0;font-size: 15px;line-height: 1; padding-right: 15px;}
+    .jtstock_horizontal_list > li:first-child > b, .jtstock_horizontal_list > li:first-child > span {padding-top: 0;}
+    .jtstock_horizontal_list > li:last-child > b, .jtstock_horizontal_list > li:last-child > span {padding-bottom: 0;}
+
+    .jtstock_vertical_list > li > b {padding-bottom: 7px;font-size: 14px;}
+    .jtstock_vertical_list > li > span {padding-top: 4px;font-size: 15px;}
+
+    .jtstock_chart {margin: 50px 0 40px; height:457px;}
+
+    .jtstock_table_column {width: 100%;}
+    .jtstock_table_column:first-child {margin-right: 0;margin-bottom: 30px;}
+    .jtstock_table_outer .jtstock_table th {padding: 12px 16px;font-size: 15px;}
+    .jtstock_table_outer .jtstock_table td {padding: 13px 16px;font-size: 14px;}
+    .jtstock_table_outer .jtstock_info_table td:first-child {padding: 13px 16px;}
+	.jtstock_table_outer .jtstock_info_table td:last-child { padding: 16px 31px; }
+
+    .jtstock_error i:after {font-size: 40px;}
+    .jtstock_error p {padding-top: 12px;padding-left: 0;font-size: 14px;letter-spacing: 0;line-height: 1.6;}
+
+	.jtstock_table_tab_menu { margin-top: 47px; }
+    .jtstock_table_tab_content table {width: 100%; margin-bottom:30px; }
+    .jtstock_info_table_01:first-child {border-right:none;}
+
+    /* IR 자료실 */
+	.jt_ir_list_wrap {padding-top: 12px;}
+	.ir_list .jt_board_notice {width:41px;height: 21px;line-height: 21px;margin-right:10px; margin-top:2px;font-weight:500;}
+    .ir_list_num {display:none;}
+    .ir_list_cat { left: 20px; font-size:15px;}
+    .ir_list_title {padding-left:150px;}
+    .ir_accordion_content h3 {padding-left:20px; padding-right:210px;}
+    .ir_accordion_content .jt_btn_icon {min-width:130px;}
+	html.ie .ir_list .jt_board_notice {line-height: 20px;}
+	html.ios .ir_list .jt_board_notice {line-height:23px;}
+	
+	/* 주주환원 */
+    .investor_return_title { font-size: 20px; margin-bottom:7px;}
+    .investor_return_desc {font-size:13px; margin-top: 6px; font-weight:400;}
+    html.ios .investor_return_desc {margin-top: 4px;}
+
+}
+
+
+
+/* **************************************** *
+ * 680px
+ * **************************************** */
+@media(max-width: 680px){
+    
+    /* 재무정보 */
+    #jt_chart_category {top:-64px;}
+    .financial_graph_wrap {padding-top:35px}
+    .financial_table_unit.financial_graph_unit {top:0;}
+
+    /* IR 자료실 */
+    .ir_list a {padding:16px 0; padding-left: 15px;}
+    .ir_list_cat { position: static; transform: none; font-size: 13px;}
+    .ir_list_title { padding: 0 30px 0 0; margin: 3px 0 6px;}
+    .ir_list_date { position: static; transform: none; }
+    .ir_list_arrow {right:20px;}
+	.ir_accordion_content h3 {font-size: 14px; padding: 18px 25px;}
+	html.android .ir_accordion_content .jt_btn_icon {padding-top: 15px; padding-bottom: 14px;}
+
+}
+
+
+
+
+/* **************************************** *
+ * 520px
+ * **************************************** */
+@media(max-width: 520px){
+	/* 재무정보 */
+	.financial_table_comment {font-size:12px;}
+
+    /* 주가정보 */
+    .jtstock_value b {font-size:33px; margin-left:0;}
+    .jtstock_title {font-size:20px;}
+    .jtstock_price_time time {padding-left:0;}
+
+    /* 공시정보 */
+    .sub_investor_dart .article_header { margin-bottom:130px}   
+    .dart_regulation_info_btn {padding-top: 15px; padding-bottom: 15px; width: 100%;bottom:-70px;} 
+
+}
+
+
+/* **************************************** *
+ * 500px
+ * **************************************** */
+@media(max-width: 500px){
+
+    /* 재무정보 */
+    .financial_data_filter nav { margin-right:0;}
+	html.mobile .financial_data_filter nav {padding-left: 110px;}
+    html.mobile .financial_data_filter_year {/*padding-right:40px;*/min-width:91px;}
+    html.mobile .financial_data_filter_year:before {width:30px; font-size:10px; top:-10px;}
+    html.mobile .financial_data_filter_year select {font-size:18px;}
+    html.ios .financial_data_filter_year {margin-top:0;}
+    html.ios .financial_data_filter_year {/*padding-right:35px;*/min-width:96px}
+
+    /* 주가정보 */
+    .jtstock_chart {height:377px;}
+
+    /* IR 자료실 */ 
+    .ir_list_cat {font-size:12px;}
+    .ir_list_title h2 {font-size:16px;}
+    .ir_accordion_content h3 {padding-right:45px;}
+    .ir_accordion_content .jt_btn_icon { min-width: auto; border: none;}
+    .ir_list_download {right:4px;}
+    .ir_list_download .jt_btn_icon span {font-size:0;}
+    .ir_accordion_content .jt_btn_icon { padding: 15px 20px;}
+
+
+
+}
+
+
+/* **************************************** *
+ * 380px
+ * **************************************** */
+@media(max-width: 380px){
+
+    /* 재무정보 */
+    .financial_data_wrap {padding-top:10px;}
+
+    /* 주가정보 */
+    .jtstock_value b {font-size:30px;}
+    .jtstock_table_outer .jtstock_info_table td:first-child { font-size: 14px; width: 50%;}
+    .jtstock_table_outer .jtstock_info_table td:last-child {width:50%;}
+
+}

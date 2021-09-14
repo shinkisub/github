@@ -1,0 +1,291 @@
+@charset "utf-8";
+/*
+ * File       : rwd-recruit.css
+ * Author     : STUDIO-JT (KMS)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1660px
+ * **************************************** */
+@media(max-width: 1660px){
+	/* 인사제도 */
+	.sub_recruit_system h2 {font-size: 27px; line-height: 1.39;}
+	.system_sub_title {font-size: 25px;}
+	.system_sub_dec { font-size: 15px; margin-top: 4px; }
+	.system_pay {margin-bottom: 100px;}
+	.system_pay li { padding: 46px 0 35px; }
+	.system_pay li b { font-size: 18px; }
+	.system_pay li p { font-size: 15px; margin-top: 7px; }
+
+	.system_welfare {padding: 94px 0 136px;}
+	.system_welfare_list {margin-top: 64px;}
+	.system_welfare_list h4 { font-size: 21px; }
+	.system_welfare_list h4 span { font-size: 17px; display: inline-block; vertical-align: middle; margin-top: -4px; }
+	.system_welfare_list ul li { padding: 60px 10px 45px; }
+	.system_welfare_list ul li figure svg { width: 90px; }
+	.system_welfare_list_content {margin: 12px auto 0;}
+	.system_welfare_list_content b { font-size: 17px; }
+	.system_welfare_list_content p { font-size: 15px; margin-top: 10px; }
+
+	/* 채용안내 */
+	.sub_recruit_info h2 { font-size: 21px; }
+	.info-step-svg { height: 45px; }
+	.info-step-svg.info-step-03-svg { height: 48px; }
+	.info-step-svg.info-step-04-svg { height: 38px; }
+	ul.recruit_steps {margin-top: -5px; padding-bottom: 10px;}
+	ul.recruit_steps li span {font-size: 16px;}
+	ul.recruit_steps li .icon-mini-arrow { -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
+	.sub_recruit_info_content .sub_desc li { font-size: 15px; padding-left: 12px; padding-bottom: 8px;}
+	.sub_recruit_info_content .sub_desc li:last-child {padding-bottom: 0;}
+	.sub_recruit_info_content .sub_desc li:before { width: 3px; height: 3px; top: 10px; }
+	.sub_recruit_info .jt_btn_basic, .sub_recruit_offer .jt_btn_basic {width: 180px;}
+
+	/* layout? */
+	.rule_item {padding: 32px 0;}
+	.rule_item h2.rule_tit { font-size: 21px; }
+	.rule_tit span { font-size: 17px; margin-top: 4px; }
+	.rule_desc p {font-size: 15px; margin-top: 6px;}
+
+	/* 채용공고 - 리스트 */
+	.sub_recruit_offer_content {margin-top: 65px;}
+	.job_board_rank {width: 100px;}
+	.job_board_rank span { font-size: 15px; }
+	.job_board_time_range { font-size: 12px; }
+	.job_board_title_container { padding: 32px 24px; } 
+	.job_board_title { font-size: 20px; margin: 3px 0 18px; }
+	.job_board_cat { font-size: 13px; }
+	.job_board_state {width: 100px;}
+	.job_board_state > span { font-size: 12px; width: 65px; padding:4px 2px 3px 2px; }
+	.job_board_list a .jt_arrow_btn {right: 0;}
+	.sub_recruit_offer .jt_btn_wrap {padding-top: 65px;}
+    html.ios .job_board_state > span  {padding: 4px 2px 2px 2px}
+
+    /* 채용공고 - 상세페이지 */
+    .jt_single_offer .offer_job_desc ul {margin:0;}
+    .jt_single_offer ul.offer_jobs_list {margin-top:0; margin-bottom:24px;}
+    .jt_single_offer ul.offer_jobs_list.offer_jobs_list_first {margin-top:-12px;}
+    .jt_single_offer .single_content ul li:before {top:10px;}
+    .single_content .offer_section_desc ul {margin-top:0;}
+    html.ios .jt_single_offer .single_content ul li:before {top:9px}   
+
+    .jt_single_offer .single_offer_list_title + .offer_jobs_table_wrap {margin-top:-12px;}
+	.jt_single_offer .offer_jobs_table td { font-size: 14px; padding: 20px 28px; }
+	.jt_single_offer .offer_jobs_table th { font-size: 15px; }
+	.jt_single_offer .offer_jobs_table tbody th { padding: 14px 28px; }
+	.jt_single_offer .offer_jobs_table thead th { font-size: 16px; padding: 18px 24px; }
+	.jt_single_offer .offer_jobs_table tbody td:first-child { font-size: 15px; word-break:break-word;}
+	.jt_single_offer .offer_jobs_table tbody td { padding: 16px 22px 17px; }
+    .jt_single_offer .offer_jobs_table td > ul > li {margin-bottom:18px;}
+    .jt_single_offer .offer_jobs_table td > ul > li > b {font-size:15px;}
+    .jt_single_offer .offer_jobs_table td > ul > li > ul > li {font-size:14px; word-break: break-all;}
+    .jt_single_offer .offer_jobs_table td > ul > li > ul > li:before {top:10px;}
+
+}
+
+/* **************************************** *
+ * 1380px
+ * **************************************** */
+@media (max-width: 1380px){
+
+    /* 채용공고 - 상세페이지 */
+    .jt_single_offer .single_offer_list_title + .offer_jobs_table_wrap {margin-top:-18px;}
+
+}
+
+/* **************************************** *
+ * 1240px
+ * **************************************** */
+@media(max-width: 1240px){	
+
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media(max-width: 1023px){
+
+    /* 채용안내 */
+	.sub_recruit_info_content {padding-top: 62px;}
+    ul.recruit_steps {margin-left:-40px;}
+    ul.recruit_steps li {width:33.33%; padding-top: calc(33.33% - 40px);}
+    ul.recruit_steps li:before {top: 20px; bottom: 20px; left: 40px; right: 40px;}
+    ul.recruit_steps li span {bottom:30%;}
+    ul.recruit_steps li:nth-child(4) { margin-left: 40px;}
+
+    /* 채용공고 - 리스트 */
+    .job_board_title {font-size:18px; max-width:100%;}
+
+    /* 채용공고 - 상세페이지 */
+    .single_content h3.offer_job_title  {width:30%; font-size:17px;}
+    .single_content .offer_section_desc .offer_process {max-width:680px}
+    .offer_job_title, .offer_job_desc { padding: 19px 13px 21px;}
+    html.ios .offer_job_title, .offer_job_desc {padding-bottom:18px;}
+
+    .jt_single_offer .offer_jobs_table {max-width:640px;}
+    
+    
+
+}
+
+
+/* **************************************** *
+ * 768px
+ * **************************************** */
+@media(max-width: 768px){
+
+    /* 인사제도 */
+    .sub_recruit_system h2 {font-size:23px; line-height: 1.42;}
+	.sub_recruit_system h2 br {display: none;}
+	.system_sub_title {font-size: 21px;}
+	.system_pay {margin-bottom: 80px;}
+    .system_pay li { width: 100%; margin-top: 30px; padding: 26px 32px 40px;}
+	.system_pay li:nth-child(1) { margin-right: 0; margin-top: 0; }
+	.system_pay li:nth-child(2) { margin-left: 0; }
+	.system_pay li b {font-size: 16px;}
+	.system_pay li p {font-size: 14px; line-height: 1.6; margin-top: 6px;}
+	.system_welfare { padding: 74px 0 100px; }
+	.system_welfare_list h4 {font-size: 18px;}
+	.system_welfare_list h4 span {font-size: 16px;padding-right: 7px;}
+    .system_welfare_list ul li { width: 100%; margin-top:30px; padding: 48px 15px 52px;}
+	.system_welfare_list ul li figure svg {width: 80px;}
+    .system_welfare_list li:nth-child(1) {margin-top: 0; }
+    .system_welfare_list_content {margin-top:0;}
+	.system_welfare_list_content b {font-size: 15px;}
+	.system_welfare_list_content p {font-size: 14px; margin-top: 6px;}
+    .system_welfare_list_content p br {display:none;}
+
+    /* 채용안내 */	
+    ul.recruit_steps {margin-left:-20px;}
+    ul.recruit_steps li { width:32%; padding-top:32%;}
+    ul.recruit_steps li:before {left: 20px; right: 20px;}
+    ul.recruit_steps li span {bottom:28%;}
+
+	.sub_recruit_info h2 {top: 2px;}
+	.sub_recruit_info_content {padding-top: 2px;}
+	.sub_recruit_info_content .sub_desc li {font-size: 14px; padding-left: 10px;}
+	.sub_recruit_info_content .sub_desc li:before {top: 9px;}
+    .rule_item h2.rule_tit{ width: 100%; display: block; padding-top: 0; }
+	.rule_item h2.rule_tit span {font-size: 16px; margin-right: 6px;}
+	.rule_item h2.rule_tit b {font-size: 18px;}
+	.sub_recruit_info_content .rule_box { margin-top: 20px; padding-bottom: 35px; border-bottom: 1px solid #eaeaea;}
+	.rule_item:first-child {padding-top: 34px;}
+	.rule_item { padding: 37px 0 0; border-bottom: 0; }
+	.rule_desc { display: block; padding-left: 32px; }
+	.rule_desc p {font-size: 14px;}
+
+    /* 채용공고 - 리스트 */
+    .jt_offer_list_wrap {position:relative; padding-top: 81px; margin-top: -18px;}
+    .jt_offer_list_wrap .jt_search {margin-top:0;}
+
+    .job_board_list_item {display:block;padding: 22px 0 23px; border-bottom:1px solid #eaeaea;}
+    .job_board_list_item > div {border-bottom:none;width: auto;display: inline-block;}
+    .job_board_list_item > a {margin-top:10px; border-bottom:none;}
+    .job_board_rank {margin-right:10px;}
+    .job_board_rank span {display:block; font-size: 14px;}
+    .job_board_state > span {left:0; width: 56px;}
+    .job_board_title {font-size:16px;}
+    .job_board_title_container {display:block;padding: 0;}
+
+    .sub_recruit_offer .jt_btn_wrap {padding-top:54px}
+
+    /* 채용공고 - 상세페이지 */
+    .single-offer h2 {margin-top: 48px; padding-bottom: 8px;}
+	.single-offer .single_meta {margin-bottom: 12px;}
+	.single-offer .single_meta i { font-size: 12px; padding: 3px 10px; }
+    .single_content  ul.offer_jobs_list.offer_jobs_list_first  {margin-top:-18px;}
+    .single_content h3.offer_job_title {font-size:16px;}
+	.jt_single_offer .single_header {padding-bottom: 46px;}
+	.jt_single_offer .single_header_cat {padding-bottom: 21px;}
+	.jt_single_offer .single_meta > span { font-size: 14px; margin-top: 10px; line-height: 1.5; }
+    .jt_single_offer .jt_btn_wrap.jt_btn_wrap_primary {padding-top:65px;}
+
+	.jt_single_offer .offer_jobs_table tbody th:first-child {width: 28%;}
+	.jt_single_offer .offer_jobs_table tbody td {padding: 17px 10px;}
+	.jt_single_offer .offer_jobs_table tbody td:first-child {font-size: 14px;}
+    .jt_single_offer .offer_jobs_table tbody td { padding: 16px 15px 17px; } 
+    .jt_single_offer .offer_jobs_table td > ul > li > b {font-size:14px;} 
+
+	.offer_section_desc .offer_process li { padding-top: 0; text-align: left; float: none; display: inline-block; vertical-align: top; position: relative; padding: 11px 0; margin-top: 12px; width: 50%; }
+	.offer_section_desc .offer_process li.offer_process_last { color: #0a0a0a; }
+	.offer_section_desc .offer_process li.offer_process_last:before { background: #0a0a0a; color: #fff; }
+	.offer_section_desc .offer_process li:nth-child(-n+2) {margin-top: 0;}
+	.offer_section_desc .offer_process li:nth-child(5n+1):not(.offer_process_00) {margin-left: 0;}
+	.offer_section_desc .offer_process li:before { width: 46px; height: 46px; top: 0; left: 0; right: auto; bottom: auto; font-size: 13px; font-weight: 700; text-align: center; line-height: 46px; color: #0a0a0a; counter-increment: item; content: '0'counter(item); letter-spacing: 0; }
+	.offer_section_desc .offer_process li span { position: static; top: auto; left: auto; width: auto; transform: none; padding-left: 58px; font-size: 16px; display: inline-block; vertical-align: top; }
+	.offer_section_desc .offer_process li .icon-mini-arrow { display: none; }
+	.single_content .offer_section_desc .offer_process { margin: 0; text-align: left; counter-reset: item; margin-bottom: 28px; }
+}
+
+
+
+/* **************************************** *
+ * 767px
+ * **************************************** */
+@media(max-width: 767px){
+	
+	/* 인사재도 */
+	.system_welfare_list_container {margin-top: 12px;}
+
+    /* 채용안내 */
+	.sub_recruit_info_content {padding-top: 6px;}
+	.sub_recruit_offer_content {margin-top: 40px;}
+}
+
+
+
+/* **************************************** *
+ * 520px
+ * **************************************** */
+@media(max-width: 520px){
+	
+    /* 채용안내 */
+    ul.recruit_steps li { width:50%; padding-top:50%;}
+    ul.recruit_steps li.step_03 .icon-mini-arrow, ul.recruit_steps li.step_05 .icon-mini-arrow {transform:rotate(90deg);top: 4px;left: 50%;margin-left: -4px;}
+    ul.recruit_steps li.step_03 {float:right;}
+    ul.recruit_steps li.step_04 .icon-mini-arrow {transform:rotate(180deg);right: -5px;left:auto;}
+    ul.recruit_steps li:nth-child(4) { margin-left: 0px;}
+
+	.jt_btn_wrap.jt_btn_wrap_primary {font-size: 0;}
+    .sub_recruit_info .jt_btn_wrap.jt_btn_wrap_primary > a {margin: 0;}
+	.sub_recruit_info .jt_btn_wrap.jt_btn_wrap_primary > a.jt_btn_basic {margin: 0; width: 100%;}
+	.sub_recruit_info .jt_btn_wrap.jt_btn_wrap_primary > a.jt_btn_basic + a.jt_btn_basic {margin-left: 0; margin-top: 10px;}
+	.sub_recruit_info .jt_btn_basic, .sub_recruit_offer .jt_btn_basic {width:100%; display: inline-block;}
+
+
+    /* 채용공고 - 리스트 */
+    .sub_recruit_offer .jt_btn_wrap.jt_btn_wrap_primary > a {margin:5px;}
+
+    /* 채용공고 - 상세페이지 */
+    .single-offer .single_meta i {display:inline-block; margin-right:0;}
+    .jt_single_offer .single_meta > span {display:block;}
+
+    .jt_single_offer .jt_btn_wrap.jt_btn_wrap_primary > a.jt_btn_basic {margin: 0; width: 100%;}
+    .jt_single_offer .jt_btn_wrap.jt_btn_wrap_primary > a.jt_btn_basic + a.jt_btn_basic {margin-left: 0; margin-top: 10px;}
+
+}
+
+
+
+/* **************************************** *
+ * 380px
+ * **************************************** */
+@media(max-width: 380px){
+
+    /* 채용안내 */
+    .info-step-svg {height:36px;}
+    .info-step-svg.info-step-04-svg {height:32px;}
+    .info-step-svg.info-step-03-svg {height:38px;}
+    ul.recruit_steps li span {font-size:15px;}
+}
+
+

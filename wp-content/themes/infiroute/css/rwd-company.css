@@ -1,0 +1,854 @@
+@charset "utf-8";
+/*
+ * File       : rwd-company.css
+ * Author     : STUDIO-JT (KMS)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1660px
+ * **************************************** */
+@media(max-width: 1660px){
+	/* 나스미디어 소개 - 소개 */
+	.about_info_intro { padding-bottom: 94px; }
+	.about_info_intro_content {margin-top: 64px;}
+	.about_info_intro_img { margin-top: 37px; }
+	.about_info_intro_img img {height: auto;}
+	.about_info_intro_content_inner h3 { font-size: 24px; line-height: 1.42; }
+	.about_info_intro_content_inner p { font-size: 15px; line-height: 1.63; margin-bottom: 25px; }
+	.about_info_download { margin-top:  24px; }
+	.about_info_download .jt_btn_icon { min-width: 180px; }
+
+	.about_info_slogan {padding: 93px 0 95px;}
+	.about_info_slogan_inner div { font-size: 24px; line-height: 1.58;}
+	.about_info_detail { padding-top: 94px; }
+	.about_info_detail h3 { font-size: 23px; width: 306px; margin-top: 0; }
+	.about_info_detail div.wrap > ul > li { padding: 20px 0 21px; }
+	.about_info_detail div.wrap > ul > li b { font-size: 16px; width: 126px; }
+	.about_info_detail div.wrap > ul > li p {font-size: 15px;}
+	.about_info_detail div.wrap > ul > li > ul > li { font-size: 15px; margin-bottom: 7px; }
+	.about_info_detail div.wrap > ul > li > ul > li:before { width: 3px; height: 3px; }
+
+	/* 나스미디어 소개 - 비전 */
+	.about_vision_intro_content {margin-top: 37px;}
+	.about_vision_intro {padding-bottom: 100px;}
+	.about_vision_intro_item {height: 320px; padding: 44px 52px; width: -webkit-calc(50% - 15px); width: calc(50% - 15px);}
+	.about_vision_intro_item:nth-child(1) {margin-right: 15px;}
+	.about_vision_intro_item:nth-child(2) {margin-left: 15px;}
+	.about_vision_intro_item em { font-size: 16px; }
+	.about_vision_intro_item em:after {width: 28px;}
+	.about_vision_intro_item h3 { font-size: 22px; bottom: 44px; left: 50px;}
+	.about_vision_intro_item.about_vision_intro_item_full {padding-top: 92px; padding-bottom: 105px; margin-top: 30px;}
+	.about_vision_intro_item.about_vision_intro_item_full h3 { font-size: 22px; }
+
+	.vision_best_pic_container { -webkit-transform: translate3d(0, 0, 0) scale(0.8); -ms-transform: translate3d(0, 0, 0) scale(0.8); transform: translate3d(0, 0, 0) scale(0.8); top: -28px; left: 11px;}
+	.vision_no1_pic_container { -webkit-transform: translate3d(0, 0, 0) scale(0.8); -ms-transform: translate3d(0, 0, 0) scale(0.8); transform: translate3d(0, 0, 0) scale(0.8);  top: -10px; left: -30px;}
+
+	.about_vision_value {padding-top: 94px; padding-bottom: 140px;}
+	.about_vision_value h3 {font-size: 23px;}
+	.about_vision_value_list {margin-left: -15px; margin-right: -15px;}
+	.about_vision_value_list li { margin: 0 15px; width: -webkit-calc(25% - 30px); width: calc(25% - 30px); padding: 48px 15px 52px; }
+	.about_vision_value_list li figure {width: 64px;}
+	.about_vision_value_list li b { font-size: 18px; margin-top: 24px; }
+	.about_vision_value_list li p { font-size: 14px; margin-top: 10px; }
+
+	/* 나스미디어 소개 - 연혁 */
+	.about_history .jt_accordion_list_wrap {margin-top: 37px;}
+	.jt_accordion_title { padding: 26px 0 24px 34px; }
+	.jt_accordion_period h2 { font-size: 26px; }
+	.jt_accordion_control {width: 74px;}
+	.jt_accordion_content_inner { padding: 60px 90px; }
+	.jt_accordion_content_inner > ul > li h3 { font-size: 32px; width: 220px; margin-top: -10px; }
+	.jt_accordion_content_inner > ul > li > ul > li {margin-bottom: 10px;}
+	.jt_accordion_content_inner > ul > li > ul > li b {font-size: 16px; margin-top: -4px; width: 70px;}
+	.jt_accordion_content_inner > ul > li > ul > li p {font-size: 15px; line-height: 1.75;}
+
+	/* 윤리경영 - 신 윤리경영 원칙 */
+	.ethics_section .sub_desc { font-size: 15px; margin-top: 11px; }
+	.ethics_rule_box {margin-top: 37px;}
+	.ethics_rule_item {padding: 45px 0 34px;}
+	.ethics_rule_tit { font-size: 21px; }
+	.ethics_rule_tit span { font-size: 17px; margin-right: 9px; }
+	.ethics_rule_desc b { font-size: 18px; }
+	.ethics_rule_desc ul {margin-top: 6px;}
+	.ethics_rule_desc ul li span,
+	.ethics_rule_desc ul li p { font-size: 14px; }
+	.ethics_rule_desc ul li p {max-width: calc(100% - 27px * 1);}
+
+	/* 윤리경영 - 윤리위반신고 */
+	.ethics_violation_item {margin-bottom: 70px;}
+	.ethics_violation_item h3 { font-size: 20px; padding-bottom: 12px; }
+	.ethics_violation_item .bullet_type { margin-top: 26px; }
+	.ethics_violation_item .bullet_type li { font-size: 15px; margin-bottom: 8px; }
+	.ethics_violation_item .bullet_type li:before {width: 3px; height: 3px; top: 10px;}
+	.ethics_violation_item .hyphen_type li:before {width:4px; height:2px;}
+
+	html.saari .ethics_violation_item .bullet_type li:before {top: 10px;}
+	html.ios .ethics_violation_item .bullet_type li:before {top: 9px;}
+    html.android .ethics_violation_item .bullet_type li:before {top:11px;}
+	.ethics_violation_item .table_type li { padding: 19px 34px 21px; }
+	.ethics_violation_item .table_type span { font-size: 15px; }
+	.ethics_violation_item .table_type b { font-size: 16px; }
+
+	.ethics_protect_list {padding: 40px 0 0;}
+	.ethics_protect_item { padding: 0 20px 0 30px; }
+	.ethics_protect_item b { font-size: 16px; padding-top: 70px; margin-bottom: 18px; left: auto;}
+	.ethics_protect_item p { font-size: 15px; line-height: 1.67; }
+	.ethics_protect_item .bullet_type {margin-top: 18px;}
+	.ethics_protect_item.protect_target_item b:before { width: 45px; height: 49px; }
+	.ethics_protect_item.protect_policy_item b:before { width: 46px; height: 43px; }
+	.ethics_protect_item.protect_policy_item .bullet_type li { margin-bottom: 17px; }
+
+	.report_title { font-size: 16px; }
+	.report_confirm_row {padding: 18px 0 16px;}
+	.ethics_report_confirm_check input { font-size: 14px; padding: 6px 10px; }
+	html.ie .ethics_report_confirm_check .jt_form_field {padding-top:6px;}
+	html.ios .ethics_report_confirm_check input {padding-top: 7px; padding-bottom: 5px;}
+	.ethics_report_confirm_check span { font-size: 12px; margin: 8px 0 0; }
+    .ethics_report_confirm_check span:before {top:1px;}
+
+	/* 윤리경영 - 제보하기 */
+	.agree_rule_header {margin-bottom: 28px;}
+	.agree_rule_header b { font-size: 22px; }
+	.agree_rule_header p { font-size: 15px; margin-top: 6px; }
+	.ethics_report_info b { font-size: 22px; }
+	.ethics_report_info .bullet_type li { font-size: 14px; padding-left: 13px; }
+	.ethics_report_info .bullet_type li:before { width: 3px; height: 3px; top: 10px; }
+	html.ios .ethics_report_info .bullet_type li:before {top: 9px;}
+	.ethics_report_form { margin-top: 64px; }
+	.ethics_report_form .jt_label { font-size: 16px; }
+	.ethics_report_form > ul > li > div {padding: 15px 0 16px;}
+	.ethics_report_form > ul > li > div:first-child { width: 270px; padding-left: 34px; }
+	.ethics_report_form > ul > li > div.form_content { padding-right: 34px; }
+	.contact_row_mail .form_field_wrap {width: 32%}
+	.contact_row_mail .field_mail_01 {width: 100%;}
+	.contact_row_mail .field_mail_02 {width: 100%;}
+	.contact_row_mail .mail_desinence { line-height: 42px; width: 4%; height: 44px; }
+	.contact_row_mail .mail_desinence:after {font-size: 14px;}
+	.contact_row_mail .jt_select_wrap {width: -webkit-calc(32% - 10px);width: calc(32% - 10px);}
+	.contact_row_mail .selectric-mail_selectric {width: 100%;}
+	.contact_row_pw .input_explain {display: block; margin-left: 0; margin-top: 12px;}
+	.contact_row_file .jt_file_upload_input { height: 44px; width: calc(100% - 130px); width: -webkit-calc(100% - 130px); }
+
+	.input_explain { font-size: 12px; margin-top: 10px; }
+	
+	/* 윤리경영 - 팝업 */
+	.page-template-company-ethics-violation-report .jt_popup_content_container .nicescroll_area_outer { padding: 40px 50px; }
+	.ethics_violation_box {margin-bottom: 24px;}
+	.ethics_violation_box h2 { line-height: 1.5; padding-bottom: 10px; } 
+	.ethics_violation_box h2:before {top: 12px;} 
+    html.android .ethics_violation_box h2:before {top:10px;}
+
+	.ethics_violation_complete_content > h2 { font-size: 24px; }
+	.ethics_violation_complete_content > p { font-size: 15px; }
+	.ethics_violation_complete_table li { padding: 20px 20px; }
+	.ethics_violation_complete_table li b { font-size: 16px;  width: 32%;}
+	.ethics_violation_complete_table li span { font-size: 15px; }
+	.ethics_violation_complete_inner_box { padding: 22px 20px; margin-top: 12px; margin-bottom: 40px; }
+	.ethics_violation_complete_inner_box p {font-size: 15px;}
+
+	/* 윤리경영 - 접수결과확인 */
+	.ethics_violation_board td.ethics_check_title, .ethics_violation_board td.ethics_check_name { font-size: 15px; }
+	.ethics_violation_board td.ethics_check_status, .ethics_violation_board td.ethics_check_date { font-size: 13px; }
+	.ethics_check_status .status_display { font-size: 13px; padding: 4px 11px; }
+	html.ios .ethics_check_status .status_display {padding: 5px 11px 3px;}
+	.ethics_result_content_inner p { font-size: 15px; }
+	.ethics_check_file_list a { font-size: 13px; }
+	.ethics_check_file { font-size: 16px; margin-bottom: 6px; }
+	.ethics_check_file_list:before { top: 6px; }
+	.jt_comment_section { margin: 34px 34px 40px; }
+	.jt_comment_section .jt_comment_tit { font-size: 18px; }
+	.ethics_violation_board td { padding: 19px 0 20px; }
+	.ethics_violation_board td.context { padding: 40px 34px 60px; }
+	.ethics_violation_board td.ethics_check_file_attach { padding: 16px 34px 40px; }
+	.jt_comment_register_wrap { margin: 0 20px 20px 0; }
+
+	.jt_comment_item_inner { padding: 30px 29px 34px; margin: 0 34px; }
+	.jt_comment_item .jt_comment_name:before {transform: scale(0.8);left: -30px;}
+	.jt_comment_item .btn_comment {padding: 5px 16px 6px;}
+	.jt_comment_name { font-size: 16px; margin-bottom: 6px; }
+	.jt_comment_content { font-size: 15px; }
+	.jt_re_comment_item {margin: 0 20px;}
+	.jt_re_comment_item_inner {padding: 30px 40px 34px;}
+
+    /* 윤리경영 - 접수결과확인 */
+    .ethics_inquiry_answer { margin:0 34px 50px;}
+    .ethics_inquiry_answer .answer_head > p > b {font-size:19px; margin-top:-3px;}
+    .ethics_inquiry_answer .answer_head > p > span { padding: 4px 16px 6px; font-size:13px;}
+    .ethics_inquiry_answer .answer_head > time {top:4px;}
+    .ethics_inquiry_answer .answer_content {font-size:17px;}
+
+	/* 보도자료 */
+	.jt_press_list_wrap .jt_grid_list_meta {bottom: 38px; left: 36px;}
+	.jt_press_list_wrap .jt_grid_list_content {height: 280px;padding: 34px 36px;}
+	.jt_press_list_wrap .jt_grid_list_desc {font-size: 15px;line-height: 1.67;max-height: 3.34em; margin-top: 12px;}
+
+	/* CI소개 */
+	.ci_subtitle { font-size: 22px; margin-bottom: 12px; }
+	.ci_desc {padding-right:240px;}
+	.ci_desc br {display: none;}
+	.ci_signature {padding-bottom: 100px;}
+	.ci_signature_item_wrap { margin-top: 37px; height: 300px;}
+	.ci_signature_item { width: 40%; }
+	.ci_signature_item:first-child { width: 60%; padding: 0;}
+	.ci_signature_item:first-child figure {width: 270px; height: auto; margin: 0 auto;}
+	.ci_signature_item img {max-width: 100%;}
+	.ci_signature_item_min_01 img {max-width:100px;}
+	.ci_signature_item_min_02 img {max-width: 57px;}
+	.ci_signature_item_min p { font-size: 15px; }
+	.ci_signature_item.ci_signature_item_min.ci_signature_item_min_01 p {top: auto;}
+	.ci_signature_item.ci_signature_item_min.ci_signature_item_min_01 figure { top: auto; margin-top: 18px; }
+	
+	.ci_elements {margin-bottom: 100px;}
+	.ci_elements_item_wrap {margin-top: 36px; padding-top: 270px;}
+
+	.ci_color {padding-top: 94px; padding-bottom: 93px;}
+	.ci_color_primary_item {height: 280px; padding: 36px 40px;}
+	.ci_color_primary_item:first-child { width: -webkit-calc(70% - 30px); width: calc(70% - 30px); }
+	.ci_color_primary_item:last-child { width: 30%; margin-left: 30px; }
+	.ci_color_primary_item h3 { font-size: 20px; }
+	.ci_color_primary_item p { font-size: 13px; bottom: 32px; left: 41px;}
+	.ci_color_secondary {margin-top: 30px;}
+	.ci_color_secondary_item { border-top-width: 36px; padding-top: 16px; }
+	.ci_color_secondary_item h3 { font-size: 18px; }
+	.ci_color_secondary_item p { font-size: 13px; }
+
+	.ci_wordmark {padding-top: 94px;}
+	.ci_wordmark_view {height: 300px;}
+	.ci_wordmark_view_wrap + .ci_wordmark_view_wrap {margin-top: 70px;}
+	.ci_wordmark_view_wrap h4 {font-size: 18px; }
+	.ci_wordmark_view_img svg {max-width: 280px;}
+	.ci_wordmark_view_wrap.tertiary .ci_wordmark_view_img svg {max-width: 245px;}
+	.ci_download .jt_btn_icon {min-width: 200px; padding: 18px 60px 18px 19px}
+	.ci_download .jt_btn_icon.jt_icon_download svg {right: 20px;}
+
+	.ci_wordmark_slide { width: 85px; height: 32px; top: -12px; }
+	.ci_wordmark_slide:before, .ci_wordmark_slide:after { top: 6px; }
+	html.ie .ci_wordmark_slide:before, html.ie .ci_wordmark_slide:after {top:7px;}
+	html.safari .ci_wordmark_slide:before, html.safari .ci_wordmark_slide:after {top:7px;}
+	.ci_wordmark_slide .jt_btn_slide_ball { width: 20px; height: 20px; top: 6px; }
+	html.ie .ci_wordmark_slide .jt_btn_slide_ball { width: 18px; height: 18px;}
+	.ci_wordmark_slide.light .jt_btn_slide_ball { left: 6px; }
+	.ci_wordmark_slide.dark .jt_btn_slide_ball { left: 59px; }
+
+	/* 오시는 길 */
+	.location_map { height: 480px; }
+	.location_info {margin-top: 43px;}
+	.location_info h3 { font-size: 24px; margin-bottom: 16px; }
+	.location_info ul li { font-size: 15px; margin-bottom: 16px; padding-left: 12px; }
+	.location_info ul li:before { width: 3px; height: 3px; top: 11px; }
+	.location_info_company {padding-right: 15px;}
+	.location_info_traffic {padding-left: 15px;}
+	.jt_maplink_btn { min-width: 180px; font-size: 14px; padding: 18px 20px 16px; }
+	.jt_maplink_btn span:after { font-size: 15px; margin-top: -7px; }
+	.jt_maplink_btn.jt_btn_kakao span:after { font-size: 15px; }
+	
+	/* 이사회 및 위원회 */
+    .committees_title { font-size: 22px; margin-bottom: 12px; }
+    .committees_section .jtstock_table td {padding-left:20px; padding-right:20px;}
+
+    /* 주주총회 */
+    .shareholder_meeting_title { font-size: 22px; margin-bottom: 12px; }
+    .shareholder_meeting_title > .share_num {font-size:17px;}
+	.shareholder_meeting_desc br {display: none;}
+}
+
+
+
+/* **************************************** *
+ * 1240px
+ * **************************************** */
+@media(max-width: 1240px){
+	/* 나스미디어 소개 - 소개 */
+	.about_info_intro_content_inner {padding-right: 20px;}
+	.about_info_intro_content_inner h3 {font-size: 22px;}
+	
+	.about_info_slogan_inner div {font-size: 22px;}
+
+	.about_info_detail h3 {width: 30%;}
+	.about_info_detail div.wrap > ul {width: 70%;}
+	
+	/* 나스미디어 소개 - 비전 */
+	.about_vision_intro_item { padding: 36px 42px; }
+	.about_vision_intro_item h3 { font-size: 20px; line-height: 1.3; left: 42px; bottom: 36px; right: 42px; }
+	.about_vision_intro_item.about_vision_intro_item_full h3 {font-size: 22px;}
+	.vision_best_pic_container { -webkit-transform: translate3d(0, 0, 0) scale(0.7); -ms-transform:  translate3d(0, 0, 0) scale(0.7);transform: translate3d(0, 0, 0) scale(0.7); top: -32px; left: 16px;}
+	.vision_no1_pic_container { -webkit-transform: translate3d(0, 0, 0) scale(0.7); -ms-transform:  translate3d(0, 0, 0) scale(0.7);transform: translate3d(0, 0, 0) scale(0.7); top: -20px;left: -25px;}
+
+	.about_vision_value_list { margin-left: -10px; margin-right: -10px; }
+	.about_vision_value_list li { margin: 0 10px; width: calc(25% - 20px); width: -webkit-calc(25% - 20px); }
+
+	/* 윤리경영 - 윤리위반신고 */
+	.report_title { vertical-align: top; padding-top: 11px; }
+
+	/* 윤리경영 - 팝업 */
+	.page-template-company-ethics-violation-report .jt_popup_content_container .nicescroll_area_outer { padding: 32px 40px; }
+	.ethics_violation_box h2 { font-size: 17px; padding-bottom: 7px; }
+	.ethics_violation_inner_box { margin-top: 25px; }
+
+	.location_map { height: 400px; }
+	
+	/* CI소개 */
+	.ci_color_secondary_item h3 {width:43%;}
+	.ci_color_secondary_item p {width:57%;}
+	
+	/* 이사회 및 위원회 */
+    .committees_section .jtstock_table td {padding-left:15px; padding-right:15px;}
+
+    /* 주주총회 */
+    .sub_company_shareholder_meeting .jtstock_table td {padding-left:15px; padding-right:15px;}
+    .shareholder_meeting_table_comment br { display:none; }
+	
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media(max-width: 1023px){
+	/* 나스미디어 소개 - 비전 */
+	.about_vision_value_list {margin-left: -15px; margin-right: -15px;}
+	.about_vision_value_list li { margin: 0 15px; width: calc(50% - 30px); width: -webkit-calc(50% - 30px); margin-bottom: 30px }
+	.about_vision_value_list li:nth-last-child(-n+2) {margin-bottom: 0;}
+	.about_vision_value_list li p {margin-top: 8px;}
+
+	.jt_accordion_title {padding: 24px 0 22px 34px;}
+	.jt_accordion_content_inner { padding: 40px 60px; }
+	.jt_accordion_content_inner > ul > li h3 { width: 170px; font-size: 28px; }
+	.jt_accordion_content_inner > ul > li > ul { width: calc(100% - 170px); width: -webkit-calc(100% - 170px); }
+
+	/* 윤리경영 - 윤리위반신고 */
+	.ethics_violation_item h3 {font-size: 19px;padding-bottom: 10px;}
+	.ethics_violation_item .table_type li {padding: 19px 20px 21px;}
+	.ethics_violation_item .bullet_type { margin-top: 20px; }
+	.ethics_section .sub_desc br {display: none;}
+	.report_title {padding-left: 20px;}
+	
+	.ethics_protect_list { display: table; }
+	.ethics_protect_item { display: table-cell; }
+	.ethics_protect_item b {margin-bottom: 14px;}
+
+	/* 윤리경영 - 제보하기 */
+	.ethics_report_info b {font-size: 18px;}
+	
+	.ethics_report_form > ul > li > div:first-child { width: 170px; padding-left: 20px; }
+	.ethics_report_form > ul > li > div.form_content { padding-right: 20px; }
+
+	/* .contact_row_file .jt_file_upload_input {width: calc(100% - 110px); width: -webkit-calc(100% - 110px);} */
+
+	.ethics_violation_board thead { display: none; }
+	.ethics_violation_board td { display: block; width: 100%; text-align: left; padding: 18px 0 16px; }
+	.ethics_violation_board th.ethics_check_title, .ethics_violation_board td.ethics_check_title { padding-left: 120px; padding-right: 0; }
+	.ethics_violation_board td { position: relative; padding-left: 120px; }
+	.ethics_violation_board td:before {content: '';position: absolute;left: 20px;font-size: 14px;color: #080a14; font-weight: 700;}
+	.ethics_violation_board td.ethics_check_class:before { content: '번호'; }
+	.ethics_violation_board td.ethics_check_status:before { content: '상태'; }
+	.ethics_violation_board td.ethics_check_title:before { content: '제목'; }
+	.ethics_violation_board td.ethics_check_name:before { content: '제보자'; }
+	.ethics_violation_board td.ethics_check_date:before { content: '작성일'; }
+	.ethics_violation_board td.context {padding: 34px 20px 57px;}
+	.ethics_check_file {margin-bottom: 0; font-size: 14px;}
+	.ethics_violation_board td.ethics_check_file_attach {padding: 16px 20px;}
+	.jt_comment_section {margin: 23px 20px 30px;}
+	.jt_comment_wordcount_number { font-size: 13px; margin-right: 12px; }
+	.jt_comment_register_btn {padding: 7px 22px; font-size: 13px;}
+	.ethics_violation_result .jt_btn_wrap {margin-top: 40px;}
+
+	.jt_comment_item_inner { padding: 30px 20px 32px;}
+	.jt_comment_item .btn_comment {font-size: 13px;}
+
+    /* 윤리경영 - 접수결과확인 */
+    .ethics_inquiry_answer {margin:30px 20px 50px; padding:30px 29px 50px;}
+    .ethics_inquiry_answer .answer_head > p > span {padding:4px 15px 6px;}
+    .ethics_inquiry_answer .answer_head > p > b {font-size:18px;}
+    .ethics_inquiry_answer .answer_content {font-size:16px; }
+	
+	/* 보도자료 */
+	.jt_press_list_wrap .jt_grid_list_content { padding: 32px 30px; height: 250px; }
+	.jt_press_list_wrap .jt_grid_list_desc { font-size: 14px; margin-top: 8px; }
+	.jt_press_list_wrap .jt_grid_list_meta { bottom: 32px; left: 30px; }
+
+	/* CI 소개 */
+	.ci_subtitle {margin-bottom: 9px;}
+	.ci_desc {padding-right:0;}
+	.ci_signature_inner .ci_download_btn { position: relative; bottom: auto; 	right: auto; margin-top: 20px; min-width: 180px; }
+	.ci_signature_item_wrap { margin-top: 40px; }
+	.ci_signature_item { width: 45%; padding: 0 25px; }
+	.ci_signature_item:first-child { width: 55%; }
+	.ci_signature_item:first-child figure { width: 200px; }
+	.ci_signature_item_min p {font-size: 14px;}
+	.ci_signature_item_min figure {margin-top: 16px;}
+	.ci_signature_item.ci_signature_item_min.ci_signature_item_min_01 figure {width: 80px; margin-top: 13px;}
+	.ci_signature_item.ci_signature_item_min.ci_signature_item_min_02 figure {width: 47px;}
+
+	.ci_elements_item_wrap {padding-top: 240px;}
+
+	.ci_color_primary_item { vertical-align: top; }
+	.ci_color_primary_item:first-child { width: calc(60% - 20px); width: -webkit-calc(60% - 20px); }
+	.ci_color_primary_item:last-child { width: 40%; margin-left: 20px; }
+	.ci_color_primary_item { padding: 29px 30px; }
+	.ci_color_primary_item h3 { font-size: 18px; }
+	.ci_color_primary_item p { bottom: 29px; left: 30px; }
+	.ci_color_secondary { margin-top: 20px; }
+	.ci_color_secondary_item { width: calc(50% - 10px); width: -webkit-calc(50% - 10px);}
+	.ci_color_secondary_item:first-child { margin-right: 20px; }
+	.ci_color_secondary_item h3 { font-size: 16px; padding-right: 10px; width: 50%;}
+	.ci_color_secondary_item p {width: 50%;}
+
+	.ci_wordmark_view { height: auto; padding: 100px 0; }
+	.ci_wordmark_view_img { vertical-align: top; }
+	.ci_wordmark_view_img svg { max-width: 220px; }
+	.ci_wordmark_view_wrap.tertiary .ci_wordmark_view_img svg {max-width: 180px;}
+	.ci_wordmark_view_wrap.tertiary .ci_wordmark_view_img svg + svg {margin-left: 50px;}
+
+	/* 오시는 길 */
+	.jt_maplink_btn { min-width: unset; width: calc(50% - 6px); width: -webkit-calc(50% - 6px); font-size: 13px; text-align: center; padding: 16px 10px 15px; }
+	.jt_maplink_btn + .jt_maplink_btn { margin-left: 6px; }
+	.jt_maplink_btn span { padding-left: 19px; }
+	.jt_maplink_btn.jt_btn_kakao span { padding-left: 14px; }
+	html.ios .jt_maplink_btn {padding-top: 17px; padding-bottom: 13px;}
+	html.ios .jt_maplink_btn span:after {margin-top: -9px;}
+	html.ios .jt_maplink_btn.jt_btn_kakao span:after {margin-top: -8px;}
+	
+	/* 이사회 및 위원회 */
+    .committees_section + .committees_section {margin-top:60px;}
+    .committees_title { margin-bottom: 9px; }
+    .committees_section .jtstock_table th {padding:20px 10px;}
+    .committees_section .jtstock_table td {padding:17px 10px;}
+
+    /* 주주총회 */
+    .shareholder_meeting_title { margin-bottom: 9px; }
+    .sub_company_shareholder_meeting .jtstock_table th {padding:20px 10px;}
+    .sub_company_shareholder_meeting .jtstock_table td {padding:17px 10px;}
+}
+
+
+
+/* **************************************** *
+ * 768px
+ * **************************************** */
+@media(max-width: 768px){
+	/* 나스미디어 소개 - 소개 */
+	.about_info_intro { padding-bottom: 74px; }
+	.about_info_intro_contnet {margin-top: 16px;}
+	.about_info_intro_content { margin-top: 52px; }
+	.about_info_intro_content_inner { width: 100%; padding-right: 0; }
+	.about_info_intro_content_inner + .about_info_intro_content_inner {margin-top: 38px;}
+	.about_info_intro_content_inner h3 {font-size: 19px; line-height: 1.5;}
+	.about_info_intro_content_inner h3 br { display: none; }
+	.about_info_intro_content_inner p {text-align: left;}
+	.about_info_download {margin-top: 15px;}
+	.about_info_download .jt_btn_icon { min-width: 180px; padding: 18px 50px 17px 18px }
+	.about_info_download .jt_btn_icon.jt_icon_download svg.icon_download {right: 24px;}
+	html.ios	.about_info_download .jt_btn_icon {padding-top: 21px; padding-bottom: 17px;}
+	.about_info_download .jt_btn_spread span {top: auto;}
+
+	.about_info_slogan { padding: 73px 0 75px; }
+	.about_info_slogan_inner div {font-size: 21px;}
+	.about_info_slogan_inner div br {display: none;}
+
+	.about_info_detail { padding-top: 74px; }
+	.about_info_detail h3 { font-size: 21px; width: 100%; }
+	.about_info_detail div.wrap > ul { width: 100%; margin-top: 30px;}
+	.about_info_detail div.wrap > ul > li { padding: 19px 0px 19px; }
+	.about_info_detail div.wrap > ul > li p {top: 1px; line-height: 1.6}
+	.about_info_detail div.wrap > ul > li > ul { width: calc(100% - 126px); width: -webkit-calc(100% - 126px); }
+    .about_info_detail div.wrap > ul > li > ul > li  {padding-left:10px;}
+	.about_info_detail div.wrap > ul > li > ul > li:before {top: 10px;}
+	html.ios .about_info_detail div.wrap > ul > li > ul > li:before {top: 8px;}
+    html.android .about_info_detail div.wrap > ul > li {padding: 17px 0px 21px; }
+    html.android .about_info_detail div.wrap > ul > li:first-child {padding-top:0;}
+
+	/* 나스미디어 소개 - 비전 */
+	.about_vision_intro {padding-bottom: 80px;}
+	.about_vision_intro_content {margin-top: 20px;}
+	.about_vision_intro_item { width: 100%; margin-top: 30px; padding: 26px 32px; height: 347px; }
+	.about_vision_intro_item:nth-child(1) { margin-right: 0; margin-top: 0; }
+	.about_vision_intro_item:nth-child(2) { margin-left: 0; }
+	.about_vision_intro_item h3 {left: 30px; bottom: 26px; right: 30px;}
+	.about_vision_intro_item.about_vision_intro_item_full {padding-top: 102px; padding-bottom: 130px;}
+	.about_vision_intro_item.about_vision_intro_item_full h3 {font-size: 20px; padding-top: 31px; line-height: 1.5;}
+
+	.vision_best_pic_container {  -webkit-transform: translate3d(0, 0, 0) scale(0.8); -ms-transform:  translate3d(0, 0, 0) scale(0.8); transform: translate3d(0, 0, 0) scale(0.8); top: 3%; left: auto; margin: auto; }
+	.vision_no1_pic_container {-webkit-transform: translate3d(0, 0, 0) scale(0.8); -ms-transform:  translate3d(0, 0, 0) scale(0.8); transform: translate3d(0, 0, 0) scale(0.8);  top: 15%; left: auto; margin: auto; }
+	.about_vision_value {padding-top: 74px; padding-bottom: 100px;}
+	.about_vision_value h3 {font-size: 21px;}
+	.about_vision_value_list li b {font-size: 17px;}
+	.about_vision_value_list li p {font-size: 15px; line-height: 1.6; margin-top: 7px;}
+
+	/* 나스미디어 소개 - 연혁 */
+	.about_history .jt_accordion_list_wrap {margin-top: 20px;}
+	.about_history .jt_accordion_content_inner {padding: 52px 25px;}
+	.jt_accordion_title { padding: 15px 0 19px 15px; }
+	.jt_accordion_period h2 {font-size: 20px;}
+	.jt_accordion_control { width: 36px; }
+	.jt_accordion_content_inner { padding: 44px 25px; }
+	.jt_accordion_content_inner > ul > li { padding-top: 43px; padding-bottom: 38px; }
+	.jt_accordion_content_inner > ul > li h3 { width: 100%; font-size: 22px; }
+	.jt_accordion_content_inner > ul > li h3 span:after { width: 5px; height: 5px; bottom: 7px; right: -10px; }
+	.jt_accordion_content_inner > ul > li > ul { width: 100%; margin-top: 12px; }
+	.jt_accordion_content_inner > ul > li > ul > li { margin-bottom: 16px; }
+	.jt_accordion_content_inner > ul > li > ul > li b { /*width: 60px;*/ /*font-size: 17px;*/ width: auto; line-height: 1.67; margin-top: -1px; }
+	.jt_accordion_content_inner > ul > li > ul > li p { width: 100%; padding-left: 38px; line-height: 1.67; }
+	.jt_accordion_content_inner > ul > li > ul > li p span.history_br { display: block; padding-bottom: 8px; }
+
+	/* 윤리경영 - 신 윤리경영 원칙 */
+	.ethics_rule_tit { width: 100%; display: block; padding-top: 0; }
+	.ethics_rule_tit span {font-size: 16px; margin-right: 7px;}
+	.ethics_rule_tit b {font-size: 18px;}
+	.ethics_rule_box { margin-top: 20px; }
+	.ethics_rule_item:first-child {padding-top: 39px;}
+	.ethics_rule_item { padding: 30px 0 0; border-bottom: 0; }
+	.ethics_rule_desc { display: block; padding-left: 32px; }
+	.ethics_rule_desc b { font-size: 15px; padding-top: 7px; }
+	.ethics_rule_desc ul {margin-top: 5px;}
+	.ethics_rule_desc ul li { margin-top: 5px; }
+	.ethics_rule_desc ul li span,
+	.ethics_rule_desc ul li p {line-height: 1.7; }
+	.ethics_report_confirm_check { border-bottom: 1px solid #eaeaea; padding: 16px 0 17px; }
+	.report_confirm_row { border-bottom: 0; padding: 0; }
+	.report_confirm_row + .report_confirm_row { padding-top: 20px; }
+
+	/* 윤리경영 - 윤리위반신고 */
+	.ethics_violation_wrap {margin-top: 37px;}
+	.ethics_violation_item {margin-bottom: 37px;}
+	.ethics_violation_item h3 {font-size: 18px; }
+    .ethics_violation_item .bullet_type li {padding-left:10px;}
+	.ethics_violation_item .bullet_type_2column li { display: block; width: 100%; margin-left: 0; }
+	.ethics_violation_item .bullet_type_2column li:nth-last-child(2) {margin-bottom: 8px;}
+	.ethics_violation_item .table_type b {font-size: 15px;}
+	.ethics_violation_item ul > .hyphen_type {margin-left:10px;}
+	.ethics_violation_item .jt_btn_wrap {margin-top: 40px; padding-bottom: 0;}
+
+	.ethics_protect_item { padding: 0 15px; }
+	.report_title { font-size: 15px;}
+
+	/* 윤리경영 - 신고하기 */
+	.page-template-company-ethics-violation-report .jt_agree_rule {margin-top: 41px;}
+	.agree_rule_header {margin-top: 21px;}
+	.agree_rule_header b { font-size: 20px; }
+	.agree_rule_header p { margin-top: 8px; }
+	.jt_agree_rule .nicescroll_area {padding-top: 0;}
+
+	.ethics_section .jt_agree_check label span {padding-bottom: 0;}
+	html.ios .ethics_section .jt_agree_check label span {padding-top: 2px;}
+
+	.ethics_report_info b {font-size: 16px;}
+	.ethics_report_info b br {display: none;}
+	.ethics_report_info .bullet_type li {padding-left: 10px;}
+
+	.subscribe_report_required_desc { top: -32px; }
+	.subscribe_report_required_desc span.necessary { left: -2px; top: 2px; font-size: 14px; }
+
+	.ethics_report_form > ul { display: block; padding-top: 35px; padding-bottom: 8px; border-bottom: 1px solid #eaeaea; }
+	.ethics_report_form > ul > li { display: block; margin-bottom: 28px; }
+	.ethics_report_form > ul > li > div { display: block; }
+	.ethics_report_form > ul > li > div:first-child { width: 100%; border: 0; padding-left: 0; padding: 0; }
+	.ethics_report_form > ul > li > div.form_content { padding-right: 0; border-bottom: 0; padding: 0; padding-top: 7px;}
+
+	.ethics_report_form .jt_form_field {width: 100%;}
+	.ethics_report_form .jt_board_radio { margin-right: 25px; }
+
+	.contact_row_tel .tel_desinence { width: 21px; }
+	.contact_row_tel .form_content > div { width: calc(33.33% - 14px); width: -webkit-calc(33.33% - 14px); }
+
+	.contact_row_pw .input_explain { margin-top: 12px; line-height: 1.7; }
+
+	.contact_row_mail .mail_desinence { width: 20px; }
+	.contact_row_mail .mail_desinence:after { font-size: 12px; }
+	.contact_row_mail .form_field_wrap {width: calc(33.33% - 9px); width: -webkit-calc(33.33% - 9px);}
+	.contact_row_mail .jt_select_wrap { width: calc(33.33% - 9px); width: -webkit-calc(33.33% - 9px);}
+	.contact_row_mail .selectric-mail_selectric { margin-left: 7px; }
+	
+	.contact_row_file .jt_file_upload_input { width: calc(100% - 85px); width: -webkit-calc(100% - 85px); }	
+	
+	.jt_radio_wrap {padding: 0;}
+
+	/* 윤리경영 팝업 */
+	.page-template-company-ethics-violation-report .jt_popup_content_container .nicescroll_area_outer { padding: 25px 20px; }
+	.ethics_violation_box {margin-bottom: 20px;}
+	.ethics_violation_box h2 { font-size: 15px; padding-left: 11px; padding-bottom: 5px; }
+	.ethics_violation_box h2:before { width: 3px; height: 3px;}
+	html.ios .ethics_violation_box h2:before {top: 8px;}
+	.ethics_violation_box p { padding-left: 11px; font-size: 13px; }
+	.ethics_violation_inner_box { padding: 24px 20px; margin-top: 20px; }
+	.ethics_violation_inner_box h3 { font-size: 14px; padding-bottom: 10px; line-height: 1.5; }
+	.ethics_violation_inner_box ul > li {line-height: 1.7; font-size: 13px;}
+	.ethics_violation_inner_box ul > li b { padding-top: 0px; }
+	
+	.ethics_violation_complete_content > h2 { font-size: 18px; line-height: 1.4; margin-bottom: 5px; }
+	.ethics_violation_complete_content > p { font-size: 13px; }
+	.ethics_violation_complete_box {margin-top: 20px;}
+	.ethics_violation_complete_box .complete_info_guide { font-size: 12px; line-height: 1.4; }
+	.ethics_violation_complete_inner_box p {font-size: 13px;}
+	.ethics_violation_complete_inner_box p span {padding-right: 6px;}
+	.ethics_violation_complete_inner_box p span:after {font-size: 11px; margin-left: 4px;}
+	.ethics_violation_complete_table li span {font-size: 14px;}
+	.ethics_violation_complete_box .complete_info_guide {line-height: 1.5; display: block;}
+
+	.ethics_violation_board tr {padding: 0;}
+	.ethics_violation_board tr:after {display: none;}
+	.ethics_violation_board td {border-bottom: 1px solid #dedede; padding: 16px 0 14px;padding-left: 25%; }
+	.ethics_violation_board td:before {left: 0;}
+	.ethics_violation_board th.ethics_check_title, .ethics_violation_board td.ethics_check_title {padding-left: 25%;}
+	.ethics_violation_board td.context {padding: 24px 0 57px;}
+	.ethics_violation_board td.ethics_check_file_attach {padding: 16px 0;}
+	.jt_comment_section {margin: 15px 0 22px;}
+	.jt_comment_section .jt_comment_tit {font-size: 16px;}
+	.ethics_violation_result .jt_comment_section .jt_comment_tit {margin-bottom: 10px;}
+	.jt_comment_wordcount_number { font-size: 12px; margin-right: 10px; }
+	.jt_comment_register_wrap { margin: 0 10px 10px 0;}
+	.jt_comment_register_btn { padding: 6px 20px 6px; font-size: 12px; }
+	html.ios .jt_btn_basic.ethics_report_btn  {padding-top: 17px; padding-bottom: 15px;}
+    html.android .jt_comment_register_btn {padding: 5px 20px 7px; }
+    html.android .ethics_violation_board td {padding-top:15px; padding-bottom:15px;}
+
+	.jt_comment_item_inner {padding: 18px 0 22px; margin: 0 30px;}
+	.jt_comment_name {font-size: 15px; margin-bottom: 2px;}
+	.jt_comment_item .jt_comment_name:before {transform: scale(0.6); left: -20px;}
+	.jt_comment_item .btn_comment {margin-top: 18px; padding: 3px 12px 4px; font-size: 12px;}
+	.jt_comment_content {font-size: 14px;}
+	.jt_re_comment_item {margin: 0;}
+	.jt_re_comment_item_inner {padding: 18px 30px 22px;}
+
+    /* 윤리경영 - 접수결과확인 */
+    .ethics_check_file_list {margin-left:65px; margin-top:-1px;}
+    .ethics_inquiry_answer {margin:20px 0 30px; padding:25px;}
+    .ethics_inquiry_answer .answer_head > p > b {font-size:17px; margin-left: 10px;}
+    .ethics_inquiry_answer .answer_head > time {font-size:13px;}
+    .ethics_inquiry_answer .answer_content {font-size:15px;}
+    .jt_re_comment_item_inner .jt_comment_top time {font-size:13px; top:1px;}
+
+	/* CI 소개 */
+	.ci_subtitle { font-size: 20px; margin-bottom: 7px; }
+	.ci_desc {font-size: 15px;}
+	.ci_desc br {display: none;}
+	.ci_signature_item_wrap {margin-top: 58px;}
+	.ci_signature {padding-bottom: 80px; padding-top: 14px;}
+	.ci_signature_item { width: 50%; }
+	.ci_signature_item:first-child { width: 50%; }
+	.ci_signature_item:first-child figure {width: 150px;}
+
+	.ci_elements {margin-bottom: 80px;}
+
+	.ci_color {padding-top: 74px; padding-bottom: 73px;}
+	.ci_color_primary_item h3 {font-size: 16px;}
+	.ci_color_primary_item p {font-size: 12px;}
+	.ci_color_secondary_item h3 {width: 100%; font-size: 15px; padding-top: 0;}
+	.ci_color_secondary_item h3 br { display: none; }
+	.ci_color_secondary_item p {width: 100%; font-size: 12px;margin-top: 10px;}
+	.ci_color_secondary_item { border-top-width: 30px; padding-top: 20px; }
+
+	.ci_wordmark {padding-top: 74px;}
+	.ci_wordmark_view { padding: 80px 0; }
+	.ci_wordmark_view_img svg { max-width: 180px; }
+	.ci_wordmark_view_wrap h4 {font-size: 15px;}
+	.ci_wordmark_view_wrap + .ci_wordmark_view_wrap {margin-top: 44px;}
+	.ci_wordmark_view_wrap.primary {margin-top: 40px;}
+	.ci_wordmark_view_wrap.tertiary .ci_wordmark_view_img svg { max-width: 130px; }
+	.ci_wordmark_view_wrap.tertiary .ci_wordmark_view_img svg + svg {margin-left: 7%;}
+
+	.ci_wordmark_slide { height: 30px; width: 76px; }
+	.ci_wordmark_slide:before, .ci_wordmark_slide:after {font-size: 13px;top: 4px;}
+	.ci_wordmark_slide:after { right: 14px; }
+	.ci_wordmark_slide:before { left: 14px; }
+	.ci_wordmark_slide .jt_btn_slide_ball { width: 18px; height: 18px; }
+	html.ie .ci_wordmark_slide .jt_btn_slide_ball { width: 16px; height: 16px; }
+	.ci_wordmark_slide.dark .jt_btn_slide_ball { left: 52px; }
+
+	.ci_download .jt_btn_icon {font-size: 14px;}
+
+	/* 보도자료 */
+	.jt_press_list_wrap { padding-top: 81px; position: relative; margin-top: -4px; }
+	.jt_press_list_wrap .jt_pagination {margin-top: 40px;}
+
+	/* 오시는 길 */
+	.location_map_container {padding-top: 9px;}
+	.location_info { display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; flex-direction: column; -webkit-box-orient: vertical; -webkit-box-direction: normal; -webkit-flex-direction: column; -ms-flex-direction: column; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+	.location_info_company { width: 100%; padding-right: 0; -ms-flex-order: 2; -webkit-order: 2; -webkit-box-ordinal-group: 3; order: 2; margin-top:34px; }
+	.location_info_traffic { width: 100%; padding-left: 0; -ms-flex-order: 1; -webkit-order: 1; -webkit-box-ordinal-group: 2; order: 1; }
+	.location_info ul li { font-size: 14px; padding-left:9px; margin-bottom: 10px;}
+	.location_info ul li:before {top: 10px;}
+	.location_info h3 { font-size: 21px; margin-bottom: 10px;}
+	.location_btn_wrap {margin-top: 25px;}
+
+	.location_map { height: 350px; }
+	
+	/* 이사회 및 위원회 */
+    .committees_section + .committees_section {margin-top:50px;}
+    .committees_title { margin-bottom:7px; font-size: 20px; }
+    .committees_desc { font-size: 15px; }
+
+    /* 주주총회 */
+    .shareholder_meeting_title { margin-bottom:7px; font-size: 20px; }
+    .shareholder_meeting_title > .share_num {font-size:16px; margin-left:10px; padding-left:10px;}
+	.shareholder_meeting_desc {font-size:15px;}
+    .shareholder_meeting_table_comment {font-size: 13px; padding-bottom: 20px; margin-top: 13px;}
+}
+
+/* **************************************** *
+ * 767px
+ * **************************************** */
+@media(max-width: 767px){
+	.ci_elements_item_wrap {padding-top: 180px; margin-top: 20px;}
+
+	/* 임시코드 rwd-layout.css 옮길예정 (body 삭제) */
+	body .article_subtitle {margin-top: 40px;}
+	
+	/* 나스미디어 소개 */
+	.about_vision_intro_item em:after {bottom: -2px;}
+}
+
+
+/* **************************************** *
+ * 680px
+ * **************************************** */
+@media(max-width: 680px){
+
+	/* 윤리경영 - 윤리위반신고 */
+	.ethics_violation_item .table_type li { padding: 14px 0; }
+	.ethics_violation_item .table_type b { width: 100%; display: block; 	margin-bottom: 4px; }
+	.ethics_violation_item .table_type span { display: block; margin-top: 0;}
+
+	.ethics_protect_list { display: block; }
+	.ethics_protect_list {padding-top: 0;}
+	.ethics_protect_item { display: block;width: 100%; border-right: 0; border-bottom: 1px solid #eaeaea; padding: 45px 15px; }
+	.ethics_protect_item b {font-size: 17px; margin-bottom: 10px;}
+	.ethics_protect_item .bullet_type {margin-top: 12px;}
+	.ethics_protect_item.protect_policy_item .bullet_type li {margin-bottom: 10px;}
+	
+	.report_confirm_row { /* padding: 16px 0 17px; */ }
+	.report_confirm_field { display: block; }
+	.report_title { display: block; width: auto; padding-top: 0; padding-left: 0; margin-bottom: 10px; }
+	.ethics_report_confirm_check input {width: 100%;}
+
+	/* 윤리경영 - 팝업 */
+	.ethics_violation_inner_box ul > li { padding-bottom: 12px; }
+	.ethics_violation_inner_box ul > li b { position: relative; display: block; margin-bottom: 2px; }
+	.ethics_violation_inner_box ul > li span { padding-left: 0; }
+
+	.ethics_violation_complete_table li {padding: 14px 0;}
+	.ethics_violation_complete_table li b {width: 100%;display: block;font-size: 15px;margin-bottom: 4px;}
+	.ethics_violation_complete_table li span {display: block;}
+	.ethics_violation_complete_inner_box {margin-top: 10px;margin-bottom: 30px;padding: 16px 20px;}
+
+	/* CI 소개 */
+	.ci_signature_item_wrap { height: auto; }
+	.ci_signature_item {width: 100%;height: auto;padding: 25px 25px;}
+	.ci_signature_item > div { vertical-align: top; }
+	.ci_signature_item:first-child { width: 100%; height: auto; padding: 60px 0; border-right: 0; border-bottom: 1px solid #eaeaea; }
+	.ci_signature_item_min p {font-size: 13px;}
+
+	.ci_color_primary_item {height: 200px;}
+	.ci_color_primary_item:first-child { width: 100%; }
+	.ci_color_primary_item:last-child { width: 100%; margin-left: 0; margin-top: 30px; }
+	.ci_color_secondary {margin-top: 30px;}
+
+	.ci_wordmark_view {padding: 70px 0;}
+	.ci_wordmark_view_img svg {max-width: 130px;}
+	.ci_wordmark_view_wrap.tertiary .ci_wordmark_view_img svg {max-width: 90px;}
+
+	.ci_wordmark_slide {width: 62px;height: 26px;top: -8px;}
+	.ci_wordmark_slide .jt_btn_slide_ball {width: 14px;height: 14px;top: 6px; transition: left .3s; -webkit-transition: left .3s;}
+	.ci_wordmark_slide:before, .ci_wordmark_slide:after {font-size: 11px;top: 4px;}
+	.ci_wordmark_slide:before {left: 10px;}
+	.ci_wordmark_slide:after { right: 10px; }
+	.ci_wordmark_slide.light .jt_btn_slide_ball {left: 6px;}
+	.ci_wordmark_slide.dark .jt_btn_slide_ball {left: 42px;}
+	
+	html.android .ci_wordmark_slide {top:-2px;}
+	html.ios .ci_wordmark_slide {top:-5px;}
+	html.ios .ci_wordmark_slide:before, html.ios .ci_wordmark_slide:after {top: 6px;}
+}
+
+
+
+/* **************************************** *
+ * 520px
+ * **************************************** */
+@media(max-width: 520px){
+	/* 오시는 길 */
+	.location_map { height: 280px; }
+	.location_info h3 {margin-bottom:7px;}
+
+	/* 나스미디어 소개 - 소개 */
+	.about_vision_value_list {margin-left: 0; margin-right: 0;}
+	.about_vision_value_list li { width: 100%; margin: 0 0 30px; }
+	.about_vision_value_list li:nth-last-child(2) { margin-bottom: 30px; }	
+	.about_vision_value_list li b { font-size: 16px; }
+	.about_vision_value_list li p { font-size: 14px; margin-top: 6px; }
+
+	.about_info_detail div.wrap > ul { border-top: 2px solid #0a0a0a; margin-top: 7px;}
+	.about_info_detail div.wrap > ul > li {padding: 22px 0 24px;}
+	.about_info_detail div.wrap > ul > li:first-child {padding-top: 22px; padding-bottom: 24px;}
+	.about_info_detail div.wrap > ul > li b {width: 100%;}
+	.about_info_detail div.wrap > ul > li p {width: 100%; margin-top: 5px;}
+	.about_info_detail div.wrap > ul > li > ul {width: 100%;margin-top: 9px; }
+	html.android .about_info_detail div.wrap > ul > li {padding-top: 17px 0 21px;}
+	html.android .about_info_detail div.wrap > ul > li:first-child {padding-top: 22px;}
+	
+	/* 나스미디어 소개 - 비전 */
+	.about_vision_intro_item.about_vision_intro_item_full h3 br.vision_mobile_br {display:block;}
+
+	/* CI 소개 */
+	.ci_download .jt_btn_icon { width: 60%; font-size: 14px; padding: 17px 60px 17px 19px; }
+	.ci_download .jt_btn_icon + .jt_btn_icon { margin-left: 0; margin-top: 10px; }
+
+	.ci_color_secondary_item {width: 100%;}
+	.ci_color_secondary_item:last-child {margin-top: 24px;}
+	.ci_color_secondary_item h3 {width: 50%;}
+	.ci_color_secondary_item h3 br {display: block;}
+	.ci_color_secondary_item p {width: 50%; margin-top: 0;}
+
+	/* 윤리위반 신고 */
+	.ethics_violation_complete_inner_box p br { display: none; }
+
+	.ethics_violation_board td {padding-left: 30%;}
+	.ethics_violation_board th.ethics_check_title, .ethics_violation_board td.ethics_check_title {padding-left: 30%;}
+	
+	/* 윤리경영 */
+	.ethics_violation_item h3 {padding-bottom:7px;}
+	.ethics_violation_item .bullet_type li {font-size:14px;}
+	.ethics_violation_item .table_type span {font-size: 14px;}
+	.ethics_violation_item .table_type .icon_arrow {margin: 0 6px;}
+	.ethics_violation_item ul > .hyphen_type li {margin-bottom:2px;}
+	.ethics_protect_item b {font-size: 15px;}
+	.ethics_protect_item p {font-size: 14px;}
+
+    /* 윤리경영 - 접수결과확인 */
+    .ethics_inquiry_answer { padding: 16px 20px;}
+    .ethics_inquiry_answer .answer_head > p > span {position:static;padding: 3px 15px 5px; font-size: 12px;}
+    .ethics_inquiry_answer .answer_head > p > b { display:block; margin-top:8px; padding-left:0; margin-left:0;font-size:16px;}
+    .ethics_inquiry_answer .answer_content {font-size:14px;margin-top:5px;}
+
+    /* 주주총회 */
+    .shareholder_meeting_title > .share_num {display:block; margin-top:10px; margin-bottom:10px; margin-left:0; padding-left:0;}
+    .shareholder_meeting_title > .share_num:before {display:none;}
+	.shareholder_meeting_desc {font-size:15px;}
+    .shareholder_meeting_table_comment {font-size: 12px}
+    .shareholder_meeting_table_comment > li + li {margin-top:4px;}
+
+}
+
+
+
+/* **************************************** *
+ * 380px
+ * **************************************** */
+@media(max-width: 350px){
+	.ci_color_secondary_item h3 {width: 100%;}
+	.ci_color_secondary_item h3 br {display: none;}
+	.ci_color_secondary_item p {width:100%; margin-top: 10px;}
+
+	/* 오시는 길 */
+	.jt_maplink_btn {width: 100%;}
+	.jt_maplink_btn + .jt_maplink_btn {margin-left: 0; margin-top: 10px;}
+}

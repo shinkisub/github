@@ -1,0 +1,555 @@
+@charset "utf-8";
+
+/*
+ * File       : rwd-business.css
+ * Author     : STUDIO-JT (KMS)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+/* **************************************** *
+ * min-width: 2001px
+ * **************************************** */
+@media (min-width: 2001px){
+	
+	.facebook_partner_badge {margin-bottom: 41px;}	
+	
+}
+
+/* **************************************** *
+ * 1660px
+ * **************************************** */
+@media(max-width: 1660px){
+	
+	/* Picto */
+	.business_picto { transform-origin: top right; -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7);}
+	.business_picto.business_picto_type_2 { -webkit-transform: scale(0.55); -ms-transform: scale(0.55); transform: scale(0.55); right: 72px;}
+    .business_picto.business_picto_type_3 {right:18px}
+	.business_picto.business_picto_type_4 {-webkit-transform: scale(0.5); -ms-transform: scale(0.5); transform: scale(0.5);  right: 2px;}
+	
+	/* COMPONENTS */
+	.components_section_container {/* margin-top: 37px; */}
+	.components_section { padding-top: 43px; padding-bottom:50px; }
+	.components_section:first-child {padding-top: 52px;}
+	.components_section.components_section_wide_img {padding-top: 60px;}
+	.components_section:last-child {padding-bottom: 119px;}
+	.components_section h5 {font-size: 16px;}
+	.components_section_title { width: 300px; }
+	.components_section_title p { font-size: 16px; }
+	.components_section_title figure {margin-bottom: 16px;}
+	.components_section_title figure img { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); margin: -2.5% 0; transform-origin:left; }
+	.components_section_content { width: -webkit-calc(100% - 300px); width: calc(100% - 300px); }
+	.components_title { font-size: 25px; margin-bottom: 12px;}
+	.components_subtitle { font-size: 18px; margin-bottom: 20px; }
+
+	.components_cards_num_item_inner { padding: 24px 28px 34px; margin: 0 10px 24px;}
+	.components_cards_grid_2 li .components_cards_num_item_inner {padding-left:48px; padding-right:48px;}
+	.components_cards_num i { font-size: 16px; margin-bottom: 14px;}
+	.components_cards_num h4 { font-size: 15px; margin-bottom: 8px; }
+	.components_cards_num p { font-size: 15px; padding-bottom: 0; }
+	.components_cards_num p br {display: none;}
+
+	.components_image { height: 80px; margin-bottom: 23px;}
+	.components_image img { max-height: 100%; width: auto; }
+
+	.components_list {margin-bottom: 32px;}
+	.components_list li {font-size: 15px; margin-top: 9px;}
+	.components_list li:before { width: 3px; height: 3px; top: 10px; }
+
+	.components_list_with_title { margin-bottom: 45px; }
+	.components_list_with_title li:before { width: 3px; height: 3px; top: 10px; }
+	.components_list_with_title p {font-size: 15px; padding-top: 0;}
+    html.android .components_list_with_title li:before {top:11px;}
+	html.ios .components_list_with_title li:before {top:11px;}
+
+	.components_separator { /* margin-top: 45px; */ /* margin-bottom: 43px; */ }
+
+	.components_list_logo li figcaption { font-size: 14px; }
+	.components_list_logo li img { width: 130px; height: 68px; }
+	.components_list_logo li { width: 130px; }
+
+	.components_list_with_icon li { margin-bottom: 48px; }
+	.components_list_with_icon_content h5 {margin-bottom: 4px;}
+	.components_list_with_icon_content p {font-size: 15px;}
+	.components_list_with_icon_img { width: 52px; }
+	.components_list_with_icon_img img { max-width: 100%; height: auto; }
+
+	.components_btn_list {margin-top: 45px;}
+	.components_btn_list .components_btn { min-width: 170px; padding: 19px 54px 17px 19px; }
+	.components_btn_list .components_btn span {font-size: 14px;}
+
+	.components_cards_icon h4 { font-size: 15px; }
+	.components_cards_icon p { font-size: 15px; }
+	.components_cards_icon_img { width: 108px; height: 63px; }
+	.components_cards_icon_item_inner { padding: 32px 20px 36px; }
+	.components_cards_icon_img_inner img { -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+
+	.business_other {padding: 112px 0 136px;}
+	.business_other h3 {font-size: 24px;}
+	.business_other h4 { font-size: 24px; margin-bottom: 8px; }
+	.business_other p { font-size: 15px; margin-bottom: 26px; }
+	.business_other p br { display: none; }
+	.business_other_icon { -webkit-transform: translate3d(0, 0, 0) scale(0.8); -ms-transform: translate3d(0, 0, 0) scale(0.8);  transform: translate3d(0, 0, 0) scale(0.8);margin-bottom: 10px; margin-left: -2%;}
+	.business_other_slider { margin: 0 -15px; }
+	.business_other_slide_item_inner { margin: 0 15px; padding: 40px 34px; }
+	.business_other_slide_item_inner .jt_arrow_btn {bottom:40px; left:34px;}
+	.business_other_slider_container .swiper-button-next { right: -92px; }
+	.business_other_slider_container .swiper-button-prev { left: -92px; }
+	.business_other_slider_container .swiper-button-next, .business_other_slider_container .swiper-button-prev { font-size: 48px; }
+
+	/* AD TECH */
+	.adtech_all_list {margin-bottom: 120px; }
+	.adtech_all_item_title.adtech_all_item_col { width: 300px; padding: 50px; }
+	.adtech_all_item_title h2 { font-size: 17px; }
+	.adtech_all_item_title p { font-size: 15px; padding-top: 3px; }
+	.adtech_all_item_logo_list li { width: 25%; }
+	.adtech_all_item_logo_list li figure { height: 70px; }
+	.adtech_all_item_logo_list li figure img {-webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9);  }
+
+	/* RESEARCH CONSULTING */
+	.research_section_container {margin-top: 48px;}
+	.research_section { padding-top: 52px; padding-bottom: 80px; }
+	.research_section + .research_section {padding-top: 74px;}
+	.research_section_title {width: 300px;}
+	.research_section_title h2 {font-size: 24px;}
+	.research_section_content {width: calc(100% - 300px); width: -webkit-calc(100% - 300px);}
+	.research_section_btn.jt_btn_icon { min-width: 180px; padding: 17px 60px 19px 19px; }
+	.research_section_content_inner figure {margin-top: 10px;}
+	.research_section_content_inner figure img { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); margin: -1.5% -5%; vertical-align: top;}
+	.research_history_section h3 { font-size: 21px; }
+	.research_history_content p { font-size: 12px; }
+	.research_history_content li {padding-left: 12px;}
+	.research_history_content li h4 { font-size: 15px; }
+	.research_history_content li:before { width: 3px; height: 3px; top: 8px; }
+	.research_history_section > li { padding: 40px 0; }
+	html.ie11 .research_section_btn.jt_btn_icon {padding-top: 19px; padding-bottom:21px;}
+	html.safari .research_section_btn.jt_btn_icon {padding-top: 20px; padding-bottom:16px;}
+	.research_history_section_more {max-width:160px; padding: 17px 60px 19px 19px;}
+	.research_history_section_more:after {right:20px;}
+	.research_history_section_more span {font-size: 14px;}
+	html.ie11 .research_history_section_more {padding-top:18px; padding-bottom:18px;}
+	html.mac .research_history_section_more {padding-top:21px; padding-bottom:20px;}
+	html.ios .research_history_section_more {padding-top:21px; padding-bottom:18px;}
+
+	.consulting_section { padding-top: 73px; }
+	.consulting_section:first-child { padding-top: 52px; }
+	.consulting_section_title h2 { font-size: 22px; }
+	.consulting_section_content_01 { padding: 65px 0 60px; }
+	.consulting_section_content_01 figure { display: inline-block; width: 350px; }
+	.consulting_section_content_01 figure img { max-width: 100%; height: auto; vertical-align: top; }
+	.consulting_section_content_02 {padding: 68px 0 120px;}
+
+	.section_branch_list:after { height: 70px; top: -35px; }
+	.section_branch_list {margin: 55px 34px 0;}
+	.section_branch_list li {padding: 65px 10px 0;}
+	.section_branch_list li:first-child:after { height: 35px; }
+	.section_branch_list li:last-child:after { height: 35px; }
+	.section_branch_list li b { font-size: 15px; }
+	.section_branch_list li p { font-size: 15px; padding-top: 14px; }
+
+	.analtycics_list {padding-bottom: 74px;}
+	.analtycics_list li b { font-size: 16px; padding-top: 23px;}
+	.analtycics_list li p { font-size: 14px; padding-top: 7px; }
+	.analtycics_partner {padding: 76px 7.4%;}
+	.analtycics_partner_power b { font-size: 18px; }
+	.analtycics_partner_power_list {padding-top: 20px;}
+	.analtycics_partner_power_list li { font-size: 14px; padding-left: 12px; padding-bottom: 9px; }
+	.analtycics_partner_power_list li:after { width: 3px; height: 3px; top: 10px; }
+	html.ios .analtycics_partner_power_list li:after {top: 9px;}
+	.analtycics_partner_list {width:245px;}
+	.analtycics_partner_list li {padding-bottom: 38px;}
+	.analtycics_partner > figure { width: 480px; padding-left: 60px;}
+	.analtycics_partner_power {padding-left: 6%;width:calc(100% - 245px * 1);width:-webkit-calc(100% - 245px * 1);}
+}
+
+
+
+/* **************************************** *
+ * 1240px
+ * **************************************** */
+@media(max-width: 1240px){
+	/* COMPONENTS */
+	.components_section_title {width: 280px; padding-right: 20px;}
+	.components_section_content { width: -webkit-calc(100% - 280px);width: calc(100% - 280px);}
+	.components_title {font-size: 24px; margin-bottom: 10px;}
+	.components_subtitle {margin-bottom: 18px;}
+
+	/* RESEARCH CONSULTING */
+	.research_section_title {width: 250px;}
+	.research_section_content { width: -webkit-calc(100% - 250px);width: calc(100% - 250px);}
+
+	.consulting_section_content_01 {padding: 50px 0 60px;}
+	.section_branch_list {margin: 55px 20px 0;}
+	.section_branch_list li:first-child {padding-right: 10px;}
+	.section_branch_list li:last-child {padding-left: 10px;}
+	.section_branch_list li b { line-height: 1.5; }
+	.section_branch_list li p { padding-top: 9px; }
+	.analtycics_partner > figure {width: 400px;}
+	.analtycics_partner_list li {padding-bottom: 26px;}
+	.analtycics_partner_list li:first-child:after { right: -1.5vw; }
+	.analtycics_partner_list li figure { display: inline-block; -webkit-transform: scale(0.9); -ms-transform: scale(0.9); transform: scale(0.9); }
+	.analtycics_partner_list li figure img {height:auto;}
+	
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media(max-width: 1023px){
+	/* Picto */
+	.business_picto { -webkit-transform: scale(0.5); -ms-transform: scale(0.5); transform: scale(0.5); top: 35px; }
+    .business_picto.business_picto_type_3 {right:13px}
+	.business_picto.business_picto_type_4 { -webkit-transform: scale(0.5); -ms-transform: scale(0.5); transform: scale(0.5);right: 0px; top:70px;}
+
+	/* GLOBAL */
+	.article.sub_business_components .article_subtitle { padding-right: 200px; }
+	.article.sub_business_components .article_subtitle br { display: none; }
+
+    .sub_business_research .article_title {padding-right: 170px;}
+
+	/* COMPONENTS */
+	.components_section.components_section_wide_img {padding-top: 52px;}
+	.components_section_title { width: 100%; padding-right: 0; margin-bottom: 38px; }
+	.components_section_title p br { display: none; }
+	.components_section_content { width: 100%; }
+	.components_title { margin-bottom: 8px;}
+	.components_subtitle {font-size: 17px; margin-bottom: 16px;}
+	.components_cards_num {margin-bottom: 18px;}
+	.components_cards_num i {font-size: 15px; margin-bottom: 8px;}
+	.components_image {height: 75px;}
+	.components_list li {line-height: 1.6;}
+	.components_list li:before {top: 11px;}
+	html.ios .components_list li:before {top: 9px;}
+
+	.components_list_with_title {margin-bottom: 36px;}
+
+	.components_list_with_icon li {margin-bottom: 40px;}
+	.components_list_with_icon_content h5 {margin-bottom: 3px;}
+
+	.components_list_logo_container.components_list_logo_slide_active {overflow: visible;}
+	.components_list_logo_slide_active.components_list_logo_container:before {opacity: 0;}
+	.components_list_logo_slide_active.components_list_logo_container:after {opacity: 0;}
+	.components_list_logo.swiper-container-horizontal {left: auto; width: auto;}
+
+	.components_btn_list {margin-top: 36px;}
+
+	.components_cards_icon {margin-bottom: 22px;}
+
+	.components_section .mobile_br_space { display: block; padding-top: 32px; }
+
+	.business_other h3 {font-size: 22px;}
+	.business_other h4 { font-size: 22px; line-height: 1.4; }
+	.business_other p {margin-bottom: 25px;}
+	.business_other_slider { margin: 0 -10px; }
+	.business_other_slide_item_inner { margin: 0 10px; padding: 40px 35px 40px; }
+	.business_other_slide_item_inner .jt_arrow_btn {opacity: 1; -webkit-transform: translateX(0px); -ms-transform: translateX(0px); transform: translateX(0px);left:35px;}
+	.business_other_icon { -webkit-transform: translate3d(0, 0, 0) scale(0.7); -ms-transform: translate3d(0, 0, 0) scale(0.85); transform: translate3d(0, 0, 0) scale(0.85); margin-left: -1.6%; margin-bottom: 4px;}
+    .business_other_icon.business_other_icon_4 {margin-left:-2%;}
+
+	/* AD SERVICE */
+	.page-id-420 .components_list_with_title li {margin-top: 18px}
+
+	/* AD TECH */
+	.adtech_all_item_title.adtech_all_item_col { width: 200px; padding: 31px 30px 29px; }
+	.adtech_all_item_title h2 { font-size: 18px; line-height: 1.4; }
+	.adtech_all_item_title p { font-size: 14px; padding-top: 0; }
+	.adtech_all_item_col { padding: 30px; }
+	.adtech_all_item_logo_list li { width: 33.3%; }	
+
+	/* RESEARCH CONSULTING */
+	.research_section_title {width: 100%; padding-right: 0; margin-bottom: 25px;}
+	.research_section_content {width: 100%;}
+	.research_history_section {padding-top: 30px;}
+	.analtycics_list li b {font-size: 15px;}
+	.analtycics_list li p {padding-top: 4px;}
+	.analtycics_partner {padding: 56px 0;}
+	.analtycics_partner > figure {width: 240px; padding-left: 0; margin-left: -3px;}
+	.analtycics_partner > figure img { max-width: 100%; height: auto; vertical-align: top; }
+    .analtycics_partner_list {width:100%;padding-right: 0;}
+    .analtycics_partner_list li {width:33.33%; text-align:center;padding-bottom:0}
+    .analtycics_partner_list li:after {content:'';position:absolute;top:0;right: 0;width:1px;height:100%;background-color:#ddd;}
+	.analtycics_partner_power {width:100%;padding-left: 6.6%;padding-right:6.6%;padding-top: 74px;}
+    .analtycics_partner_power:after {width:0;}
+	.analtycics_partner_power_list {padding-top: 18px;}
+}
+
+
+
+/* **************************************** *
+ * 860px
+ * **************************************** */
+@media(max-width: 860px){
+	/* GLOBAL */
+	.article.sub_business_components .article_subtitle {padding-right: 0;}
+	.article.sub_business_components .article_subtitle span  {display: inline-block;}
+	.article.sub_business_components .article_subtitle_btn_download.jt_btn_icon {position: relative; bottom: auto; margin-top: 20px;}
+
+	/* COMPONENTS */
+	.business_other_slider {overflow: visible;}
+}
+
+
+
+/* **************************************** *
+ * 768px
+ * **************************************** */
+@media(max-width: 768px){	
+	/* COMPONENTS */
+	.components_section_container {margin-top: 20px;}
+	.components_section {padding-top: 52px; padding-bottom: 58px;}
+	.components_section:first-child {padding-top: 50px;}
+	.components_section:last-child {padding-bottom: 96px;}
+	.components_section_title {/* margin-bottom: 25px; */}
+	.components_section_title p { font-size: 14px; }
+	.components_section_title figure {margin-bottom: 10px;}
+	.components_section_title figure img { -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); margin: -2.5% 0; }
+	.components_title { font-size: 19px; margin-bottom: 7px; }
+	.components_subtitle { font-size: 16px; margin-bottom: 26px; }
+	.components_image { height: 65px; }
+	.components_separator {margin-top: 53px; margin-bottom: 51px;}
+
+	.components_cards_num {margin-bottom: 10px;}
+	.components_cards_num i {font-size: 14px;}
+	.components_cards_num p {font-size: 14px;}
+
+    .components_list { margin-left: 11px; margin-top: -2px;}
+	.components_list li {font-size: 14px;margin-top:30px;}
+    .components_list li:before { top:10px;left:-10px;}
+    .components_list_with_title {margin-left:11px; margin-top: -2px;}
+    .components_list_with_title li:before {left:-10px;}
+	.components_list_with_title p {font-size: 14px;}
+	.components_section_container .component_star {font-size: 13px; top: 0;}
+	html.ios .components_list_with_title li:before {top:11px;}
+
+	.components_list_with_icon li {margin-bottom: 32px;}
+	.components_list_with_icon_content h5 {margin-bottom: 2px;}
+	.components_list_with_icon_content p {font-size: 14px;}
+
+	.components_cards_icon h4 {margin-bottom: 4px;}
+	.components_cards_icon p { font-size: 14px; }
+	.components_cards_icon_item_inner { padding: 32px 15px 36px; }
+
+	.business_other {padding-top: 73px; padding-bottom: 100px;}
+	.business_other h3 {font-size: 21px;}
+	.business_other h4 {font-size: 20px; margin-bottom: 6px;}
+	.business_other p {font-size: 14px;}
+
+	/* AD SERVICE */
+	.components_list_with_title li {margin-bottom:30px;}
+	.page-id-420 .components_list_with_title li {margin-top: 16px;}
+	
+	/* AD PLATFORM */
+	.components_section h5 {font-weight:400;}
+	.components_section .mobile_br_space {padding-top:10px;}
+
+	/* RESEARCH CONSULTING */
+	.research_section {padding-top: 44px; padding-bottom: 58px; border-top:0;}
+	.research_section:last-child {padding-bottom: 96px;}
+	.research_section_container {margin-top: 20px;}
+	.research_section_title {margin-bottom: 7px;}
+	.research_section_title h2 {font-size: 19px;}
+	.research_section_btn.jt_btn_icon {padding: 16px 30px 15px 16px; min-width: 160px;}
+	html.ie11 .research_section_btn.jt_btn_icon {padding-top: 16px; padding-bottom:19px;}
+	html.ios .research_section_btn.jt_btn_icon {padding-top: 17px; padding-bottom: 15px;}
+	.research_section_content_inner .research_section_btn span { font-size: 14px; top: 0;}
+	.research_history_section > li {padding: 30px 0;}
+	.research_history_section h3 { width: 100%; margin-bottom: 12px; }
+	.research_history_content { width: 100%; }
+	.research_history_content li {margin-top: 14px; padding-left:9px;}
+	
+	.research_history_section_more {max-width:120px; padding:16px 60px 18px 16px;margin-top:0;}
+	html.ios .research_history_section_more {padding-top:18px; padding-bottom:17px;}
+	html.ios .research_history_section_more:after {margin-top:-9px;}
+
+	.consulting_section_container {margin-top: 21px;}
+	.consulting_section:first-child {padding-top: 44px;}
+	.consulting_section_title h2 {font-size: 19px;}
+	
+	.analtycics_partner {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap; padding:0; -webkit-box-shadow: none;box-shadow: none;}
+    .analtycics_partner_list {-webkit-box-flex: 0;-webkit-flex: 0 0 100%;-ms-flex: 0 0 100%;flex: 0 0 100%;-webkit-box-ordinal-group: 3;-webkit-order: 2;-ms-flex-order: 2;order: 2;padding-top: 56px;}
+    .analtycics_partner_power {-webkit-box-flex: 0;-webkit-flex: 0 0 100%;-ms-flex: 0 0 100%;flex: 0 0 100%;-webkit-box-ordinal-group: 2;-webkit-order: 1;-ms-flex-order: 1;order: 1;padding-top:0;padding-left:0;padding-right:0;}
+	.analtycics_partner_power b {font-size: 17px;}
+	.analtycics_partner_power_list {padding-top: 16px;}
+    .analtycics_partner_power_list li {padding-left:9px;}
+	
+	.consulting_section_content_01 {margin-top: 11px;}
+	.consulting_section_content_01 figure {padding: 0 30px;}
+	.consulting_section_content_02 {padding: 46px 0 96px;}
+	.section_branch_list { margin: 100px 24px 0; }
+	.section_branch_list:before { display: none; }
+	.section_branch_list:after {height: 60px; top: -84px;}
+	.section_branch_list li { width: 100%; text-align: center; padding: 0; margin-top: 46px; }
+	.section_branch_list li:first-child { margin-top: 0; padding-right: 0;}
+	.section_branch_list li:first-child:after { display: none; }
+	.section_branch_list li:last-child {padding-left: 0;}
+	.section_branch_list li:last-child:after { display: none; }
+	.section_branch_list li b { line-height: 1.67; }
+	.section_branch_list li p {font-size: 14px;line-height: 1.67;}
+	.analtycics_list {padding-bottom: 56px;}
+	.analtycics_list li b { padding-top: 10px; }
+	.analtycics_list li p { padding-top: 2px; }
+
+}
+
+
+
+/* **************************************** *
+ * 767px
+ * **************************************** */
+@media(max-width: 767px){
+	/* GLOBAL */
+	.article.sub_business_components .article_subtitle {margin-bottom: 20px;}
+	
+	/* Picto */
+	.business_picto {-webkit-transform: scale(0.3); -ms-transform: scale(0.3); transform: scale(0.3);  top: -5px; }
+	.business_picto.business_picto_type_2 { -webkit-transform: scale(0.35); -ms-transform: scale(0.35);transform: scale(0.35); right: 45px;}
+    .business_picto.business_picto_type_3 {right:8px}
+	.business_picto.business_picto_type_4 { -webkit-transform: scale(0.35); -ms-transform: scale(0.35); transform: scale(0.35);  top:20px; right:-6px;}
+    .business_picto.business_picto_type_4 span {margin: 0 20px; animation-duration:2.5s}
+
+	/* .sub_business_research .article_title {padding-right: 0;} */	
+	.components_section.components_section_wide_img  + .components_section {padding-top: 34px;}
+
+	.components_cards_num::-webkit-scrollbar {display:none;}
+	.components_cards_icon::-webkit-scrollbar {display:none;}
+}
+
+
+
+/* **************************************** *
+ * 680px
+ * **************************************** */
+@media(max-width: 680px){
+    /* GLOBAL */
+    .sub_business_research .article_title {padding-right:120px; }
+
+	/* COMPONENTS */
+	.components_cards_num { width: auto; margin: 0 -30px 40px; overflow-y: hidden; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; font-size: 0;}
+	.components_cards_num li { width: 240px; float: none; display: inline-block; vertical-align: top; white-space: normal; }
+	.components_cards_num li:first-child {margin-left: 20px;}
+	.components_cards_num li:last-child {margin-right: 20px;}
+	.components_cards_num_item_inner { margin-bottom: 0; }
+	.components_cards_grid_2 li .components_cards_num_item_inner {padding-left:28px; padding-right:28px;}
+	
+	.components_cards_num.components_cards_grid_1 li {width: 100%;margin-left: 0px;margin-bottom: 20px;}
+	.components_cards_num.components_cards_grid_1 {margin-left: 0;margin-right: 0;white-space: normal;}
+    .components_cards_num.components_cards_grid_1 .components_cards_num_item_inner { margin-left: 0;margin-right: 0;}
+	
+	.components_list { margin-bottom: 26px; }
+	.components_list_with_title {margin-bottom: 26px;}
+
+	.components_btn_list { margin-top: 44px; }
+	.components_btn_list .components_btn { padding: 16px 30px 15px 16px; min-width: 160px; }
+	.components_btn_list .components_btn span {white-space:nowrap;}
+
+	.components_cards_icon.components_cards_grid_2 {width: auto; margin: 0 -30px 40px; overflow-y: hidden; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; font-size: 0;}
+	.components_cards_icon.components_cards_grid_2 li {width: 240px; float: none; display: inline-block; vertical-align: top; white-space: normal;}
+	.components_cards_icon.components_cards_grid_2 li:first-child {margin-left: 20px;}
+	.components_cards_icon.components_cards_grid_2 li:last-child {margin-right: 20px;}
+	.components_cards_icon.components_cards_grid_2 .components_cards_icon_item_inner {margin-bottom: 0;}
+
+	.components_cards_icon.components_cards_grid_3 {width: auto; margin: 0 -30px 40px; overflow-y: hidden; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; font-size: 0;}
+	.components_cards_icon.components_cards_grid_3 li {width: 240px; float: none; display: inline-block; vertical-align: top; white-space: normal;}
+	.components_cards_icon.components_cards_grid_3 li:first-child {margin-left: 20px;}
+	.components_cards_icon.components_cards_grid_3 li:last-child {margin-right: 20px;}
+	.components_cards_icon.components_cards_grid_3 .components_cards_icon_item_inner {margin-bottom: 0;}
+	
+	.components_cards_icon.components_cards_grid_4 {width: auto; margin: 0 -30px 40px; overflow-y: hidden; overflow-x: auto; white-space: nowrap; -webkit-overflow-scrolling: touch; font-size: 0;}
+	.components_cards_icon.components_cards_grid_4 li {width: 240px; float: none; display: inline-block; vertical-align: top; white-space: normal;}
+	.components_cards_icon.components_cards_grid_4 li:first-child {margin-left: 20px;}
+	.components_cards_icon.components_cards_grid_4 li:last-child {margin-right: 20px;}
+	.components_cards_icon.components_cards_grid_4 .components_cards_icon_item_inner {margin-bottom: 0;}
+	
+	html.ios	.components_btn_list .components_btn {padding-top: 17px; padding-bottom: 15px;}
+
+	/* AD TECH */
+	.adtech_all_list {margin-top: 20px; margin-bottom: 80px;}
+	.adtech_all_item_logo_list li {width: 50%;}
+
+	.analtycics_list li { width: 100%; margin-top: 46px; }
+	.analtycics_list li:first-child {margin-top: 0;}
+	.analtycics_partner > figure { width: 225px; padding-left: 0; margin-bottom: 25px; }
+	
+	/* RESEARCH CONSULTING */
+	.research_history_section_more:after {right:16px;}
+
+    /* Picto */
+    .business_picto.business_picto_type_4 { -webkit-transform: scale(0.3); -ms-transform: scale(0.3); transform: scale(0.3); }
+    .business_picto.business_picto_type_4 span {animation-duration:2.3s}
+}
+
+
+/* **************************************** *
+ * 540px
+ * **************************************** */
+@media(max-width: 540px){
+	/* picto */
+	.business_picto {display: none;}
+
+	/* GLOBAL */
+	.article.sub_business_components .article_subtitle br {display: none;}
+	.article.sub_business_consulting .article_subtitle br {display: none;}
+    .sub_business_research .article_title { padding-right:0;}
+
+	/* COMPONENTS */
+	.components_section_container {margin-top: 10px;}
+	.components_btn_list .components_btn {width: calc(50% - 2px); width: -webkit-calc(50% - 2px); min-width: unset; margin-left: 4px;}
+	
+	.components_cards_num,
+	.components_cards_icon.components_cards_grid_2,
+	.components_cards_icon.components_cards_grid_3 {margin-top:-17px;}
+	.business_other_icon {margin-left: -1.6%;}	
+	
+	.components_list li  {margin-top:20px;}
+	.components_list_with_title li {margin-bottom:20px;}
+	
+	/* AD SERVICE */
+	.page-id-439 .components_section h5 {font-size:15px;}
+	
+	/* AD PLATFORM */
+	.components_section h5 {font-size:14px;}
+	.components_list_with_title p {font-size:13px;}
+
+	/* AD TECH */
+	.adtech_all_list > li {margin-bottom: 30px;}
+	.adtech_all_item { display: block; }
+	.adtech_all_item_col { display: block; padding: 20px 30px; }
+	.adtech_all_item_title.adtech_all_item_col { width: 100%; padding: 30px; }
+	.adtech_all_item_logo_list li { float: none; display: inline-block; vertical-align: middle; width: 50%; }
+	.adtech_all_item_logo_list { font-size: 0; }
+	.adtech_all_item_logo_list li figure { display: block; height: auto; padding: 22px 0; }
+
+	/* RESEARCH CONSULTING */
+	.sub_business_research .article_subtitle br { display: none; }
+	.research_section_content_inner figure img { margin: -2% -7.5%;-webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7);  display: inline-block; vertical-align: top;}
+	.research_section_content_inner .research_section_btn { float: left; clear: left; margin-top: 15px; }
+	
+	.consulting_section_content_01 {margin-top:7px;}
+	.consulting_section_content_01 figure { padding: 0 30px; width: 100%; }
+	.analtycics_partner_list li {width: 100%; margin-top: 40px; text-align: left;}
+	.analtycics_partner_list li:after { width: 100%; height: 1px; transform: none; top: auto; bottom: -20px; }
+	.analtycics_partner_list li:first-child {margin-top: 0;}
+	.analtycics_partner_list li:first-child:after { right: 0; }
+	.section_branch_list li p br { display: none; }
+}
+
+
+
+/* **************************************** *
+ * 350px
+ * **************************************** */
+@media(max-width: 350px){
+	/* COMPONENTS */
+	.components_btn_list .components_btn { width: 100%; margin: 0; }
+	.components_btn_list .components_btn + .components_btn { margin-top: 10px; }
+
+	/* AD TECH */
+	.adtech_all_item_logo_list li figure img { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); }
+}

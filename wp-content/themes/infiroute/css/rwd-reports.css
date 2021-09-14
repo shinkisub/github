@@ -1,0 +1,217 @@
+@charset "utf-8";
+/*
+ * File       : rwd-reports.css
+ * Author     : STUDIO-JT (KMS)
+ * Guideline  : JTstyle.1.1
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 01)
+ */
+
+
+
+/* **************************************** *
+ * 1660px
+ * **************************************** */
+@media(max-width: 1660px){
+	/* 나스리포트 */
+	.jt_pr_list_wrap .jt_grid_list_content { height: 220px; padding:32px 30px;}
+	.jt_pr_list_wrap .jt_grid_list_title {max-height: 4.35em;}
+	.jt_single.jt_single_pr .single_header_cat { font-size: 18px; padding-bottom: 20px; }
+
+	/* NPR */
+	.jt_grid_list_npr_year { font-size: 32px; line-height: 1; margin-top: 8px; }
+	.jt_npr_list_wrap .jt_grid_list_content { height: 230px; padding: 32px 30px; }
+	.jt_npr_list_wrap .jt_grid_list_meta { bottom: 30px; left: 30px; width: -webkit-calc(100% - 60px); width: calc(100% - 60px); }
+	.page-template-reports-npr .jt_grid_list_date {display:block;}
+	.page-template-reports-npr .single_meta_survey_time {display: block;padding-right:0; margin-right:0;}
+	.page-template-reports-npr .single_meta_survey_time:after {width:0;}
+
+	.single-npr .single_slide_item_time .single_meta_survey_time {display:block;padding-right:0; margin-right:0;}
+	.single-npr .single_slide_item_time .single_meta_survey_time:after {width:0;}
+
+	/* 나스리포트 신청 */
+	.subscribe_report_desc { font-size: 21px; }
+	.subscribe_report_required_desc { font-size: 12px; }
+	.subscribe_report_required_desc span.necessary {left: -4px; font-size: 16px; top: 4px;}
+	.subscribe_report_form .jt_label { font-size: 17px; }
+	.subscribe_report_form > ul > li > div { padding: 18px 0 19px; }
+	.subscribe_report_form > ul > li > div:first-child { padding-left: 32px; width: 240px; }
+	.subscribe_report_form > ul > li > div.form_content { padding-right: 32px; }
+	.subscribe_report_form > ul > li:last-child > div .jt_label {padding-top: 21px;}
+	.subscribe_report_form .form_content > ul {padding-top: 7px;}
+	.subscribe_report_form .form_content > ul > li { font-size: 15px; margin-top: 16px; }
+	.subscribe_report_form .form_content > ul > li:before { width: 3px; height: 3px; top: 10px; left: -10px; }
+	.subscribe_report_form .form_content > ul > li > span br { display: none; }
+	.subscribe_report_form > ul > li.subscribe_row_content > div.form_content {padding-bottom: 36px;}
+	.subscribe_report_form .jt_agree_check { padding-top: 26px; }
+	.subscribe_report_form .jt_agree_check label span {font-weight: 400; padding-left: 6px;}
+	.subscribe_report_form .jt_agree_check label span i {font-size: 16px;}
+	.subscribe_report_form .jt_btn_wrap {margin-top: 40px;}
+	.subscribe_report_form .jt_btn_wrap a.goto_unsubscribe_report_btn { width:auto ;font-size: 13px;}
+
+	.real3dflipbook_jt_container .jt_icon_download, .real3dflipbook_jt_container .jt_icon_download:not(.jt_btn_basic) {  font-size: 14px; min-width: 150px; padding: 17px 30px 15px 24px; }
+
+	/* 통합 매체 제안 */
+	.sub_reports_suggestion .ir_accordion_content div:first-child  {top: 26px; font-size: 15px;}
+}
+
+
+/* **************************************** *
+ * 1380px
+ * **************************************** */
+@media (max-width: 1380px){
+
+    /* 정기보고서 */
+    .real3dflipbook_jt_container .jt_icon_download, .real3dflipbook_jt_container .jt_icon_download:not(.jt_btn_basic) {right:30px;}
+
+}
+
+
+
+/* **************************************** *
+ * 1023px
+ * **************************************** */
+@media(max-width: 1023px){
+
+    /* 정기보고서 */
+    #jt_pr_search  {margin-top:-7px;}
+    #jt_pr_search .jt_search_category {margin-right:20px;}
+    #jt_pr_search .jt_search_category.jt_search_subcategory { width: 140px;}
+    #jt_pr_search .jt_search_field {width:235px;}
+    .jt_pr_list_wrap .jt_grid_list {margin-bottom:-30px;}
+    .jt_pr_list_wrap .jt_grid_list_item {margin-bottom:30px;}
+
+    /* NPR */
+    .jt_grid_list_npr_year {font-size:28px;}
+    .jt_npr_list_wrap .jt_grid_list_item { margin-bottom:4%;}
+    .npr_slide_item .single_slide_item_year {font-size:28px;}
+    .npr_slide_item .single_slide_item_title {min-height:auto;}
+    .npr_slide_item .single_slide_item_etc {position:absolute;}
+
+    /* 나스 리포트 */
+	.subscribe_report_required_desc {right:auto; left:0;}
+    .subscribe_report_desc {font-size:18px;}
+	.subscribe_report_form { margin-top: 56px; }
+    .subscribe_report_form > ul > li > div:first-child {width:150px; padding-left:20px;}
+}
+
+
+
+/* **************************************** *
+ * 768px
+ * **************************************** */
+@media(max-width: 768px){
+
+    /* 정기보고서 */
+    .jt_pr_list_wrap { position: relative; padding-top: 135px; margin-top: 0;}
+	#jt_pr_search {margin-top: -5px;}
+    #jt_pr_search .jt_search_category {width:23%; margin-right:0;}
+    #jt_pr_search .jt_search_category.jt_search_subcategory { width: calc(77% - 20px); margin-right: 20px;}
+    #jt_pr_search .jt_search_field {width:100%;margin-top:16px;}
+    .jt_pr_list_wrap .jt_list_count {margin-bottom:12px;}
+    .jt_single_pr .single_title {padding:0 25px;}
+
+    .real3dflipbook_jt_container .flipbook-menu.flipbook-menu-center {padding:15px 0 20px;}
+    .jt_single.jt_single_pr .real3dflipbook_jt_container {text-align:center;}
+    .real3dflipbook_jt_container .jt_icon_download,
+	.real3dflipbook_jt_container .jt_icon_download:not(.jt_btn_basic) { margin-top:64px; bottom: 48px; right:0; position: relative;  display: inline-block;}
+    .single_content .flipbook-left-arrow:after, .single_content .flipbook-right-arrow:after {font-size:24px;}
+
+	.real3dflipbook_jt_container .flipbook-thumbHolder { border-bottom-width: 1px; bottom: 73px;}
+	.flipbook-carousel-slide{ background: rgb(10, 10, 10);}
+	.flipbook-main-wrapper{ background: none !important;}
+
+    /* NPR */
+    .jt_npr_list_wrap { position: relative; padding-top: 77px; margin-top: 0;}
+	.jt_npr_list_wrap .jt_grid_list_item {margin-bottom: 30px;}
+    .jt_single_npr .single_title {padding:0 25px;}
+    .jt_single.jt_single_npr .real3dflipbook_jt_container {text-align:center; margin-bottom:40px;}
+	.jt_pr_list_wrap .jt_search, .jt_npr_list_wrap .jt_search {margin-top: -5px;}
+
+    /* 나스 리포트 */
+	.page-template-reports-subscribe .main_container {padding-bottom: 180px;}
+	.subscribe_report_desc { padding-top: 5px; }
+	.subscribe_report_form {margin-top: 54px;}
+	.subscribe_report_form > ul {padding-top: 35px; /* border-bottom: 1px solid #eaeaea; */}
+	.subscribe_report_form > ul > li > div {border-bottom: 0;}
+    .subscribe_report_form > ul > li > div:first-child { width: 100%; padding-left:0; padding-top: 0; padding-bottom: 7px; display: block; border-bottom: none;}
+    .subscribe_report_form > ul > li > div.form_content { padding:0 0 28px; display: block;}
+	.subscribe_report_form > ul > li:last-child > div .jt_label {padding-top: 0;}
+	.subscribe_report_required_desc {top: -38px;}
+    .subscribe_report_form .jt_label {font-size:16px;}
+    .subscribe_report_form .form_content > ul {padding-top:0;}
+    .subscribe_report_form .form_content > ul > li {font-size:14px;}
+    .subscribe_report_form .form_content > ul > li:first-child {margin-top:0;}
+    .subscribe_report_form .form_content > ul > li:before {top:9px;}
+    .subscribe_report_form .jt_btn_wrap {margin-top:50px;}
+    html.ios .subscribe_report_form .form_content > ul > li:before {top:10px;}
+	.subscribe_report_form .jt_btn_wrap a.goto_unsubscribe_report_btn {left: 50%; right: auto; transform: translateX(-50%);}
+
+	.unsubscribe_report .subscribe_report_form > ul {padding-top: 16px;}
+	.unsubscribe_report .subscribe_report_form > ul > li > div.form_content {padding-bottom: 19px;}
+    .unsubscribe_report .subscribe_report_form > ul > li > div:first-child {padding-left:0; padding-bottom: 6px;}
+    a.goto_unsubscribe_report_btn { position: absolute; top: auto; bottom: -60px;}
+    .unsubscribe_report .subscribe_report_form .jt_btn_wrap {margin-top:40px;}
+
+	/* 통합 매체 제안 */
+	.sub_reports_suggestion .ir_list_title { padding-left: 20px; }
+	.sub_reports_suggestion .ir_accordion_content h3 { padding-left: 160px; }
+	.sub_reports_suggestion .ir_accordion_content div:first-child  { left: 20px; }
+}
+
+
+
+
+/* **************************************** *
+ * 680px
+ * **************************************** */
+@media(max-width: 680px){
+
+    /* 정기보고서 */
+    .jt_pr_list_wrap .jt_grid_list_content { height: auto;}
+    .jt_pr_list_wrap .jt_grid_list_meta { margin-top: 35px; position: static;}
+	.jt_pr_list_wrap .jt_grid_list_title { font-weight: 500; }
+	.jt_grid_list_download { right: 25px; bottom: 22px; }
+
+    /* NPR */
+    .jt_npr_list_wrap .jt_grid_list_download {bottom:0;}
+    .jt_npr_list_wrap .jt_grid_list_date { display: block; width: 75%;}
+
+	/* 통합 매체 제안 */
+	.sub_reports_suggestion .ir_list_title { padding-left: 0; }
+	.sub_reports_suggestion .ir_accordion_content h3 { padding-left: 130px; padding-right: 180px; }
+	.sub_reports_suggestion .ir_accordion_content div:first-child  { top: 18px; left: 15px; font-size: 14px; }
+}
+
+
+
+
+/* **************************************** *
+ * 520px
+ * **************************************** */
+@media(max-width: 520px){
+
+    /* 나스 리포트 */
+    .subscribe_report_form .topic_selectric {max-width:100%; width:100%;}
+	.unsubscribe_report .subscribe_report_form .jt_btn_wrap {margin-top: 30px;}
+	.unsubscribe_report .jt_btn_wrap > a, .unsubscribe_report .jt_btn_wrap button {width: calc(50% - 3px); width: -webkit-calc(50% - 3px); margin: 0;}
+	.unsubscribe_report .jt_btn_wrap > a + button {margin-left: 6px;}
+    .single_content .flipbook-left-arrow:after, .single_content .flipbook-right-arrow:after {font-size:19px;}
+    .single_content .flipbook-left-arrow {left:10px;}
+    .single_content .flipbook-right-arrow {right:10px;}
+
+	/* 통합 매체 제안 */
+	.sub_reports_suggestion .ir_accordion_content h3 { padding-left: 110px; }
+}
+
+
+
+/* **************************************** *
+ * 500px
+ * **************************************** */
+@media(max-width: 500px){
+	.sub_reports_suggestion .ir_accordion_content h3 { padding-right: 50px; }
+}

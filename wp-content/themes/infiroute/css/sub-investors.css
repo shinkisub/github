@@ -1,0 +1,422 @@
+@charset "utf-8";
+/*
+ * File       : sub-investors.css
+ * Author     : STUDIO-JT (NICO)
+ * Guideline  : JTstyle.1.1
+ *
+ * Dependency : css/reset.css
+ *              css/jt-strap.css
+ *
+ * SUMMARY:
+ * 1) IR자료
+ * 2) 주요공고
+ * 3) 공시정보
+ * 4) 주가정보
+ * 5) 재무정보
+ * 6) 거버넌스
+ * 7) 재무정
+ */
+
+
+
+/* **************************************** *
+ * Global
+ * **************************************** */
+.sub_investor .sub_tab_nav_container { margin-bottom: 100px;}
+.jt_dart_list_wrap .jt_search,
+.jt_announcement_list_wrap .jt_search{ margin-top: -14px;}
+
+.jt_dart_list_wrap .jt_board_list,
+.jt_announcement_list_wrap .jt_board_list { border-color: #ddd;}
+.jt_announcement_list_wrap .jt_board_list .jt_board_notice {font-weight:600;}
+
+
+/* **************************************** *
+ * 공시정보
+ * **************************************** */
+ .jt_dart_list_wrap .jt_board_list .jt_board_title_wrap{text-overflow: inherit;white-space: normal;overflow: inherit;max-width: -webkit-calc(100% - 90px);max-width: calc(100% - 90px);}
+ .jt_dart_list_wrap .jt_board_title_cat { padding-top: 10px; color: #666; font-size: 14px;}
+ .jt_dart_list_wrap .jt_board_author{font-size: 16px;}
+ .jt_dart_list_wrap .jt_board_list td.jt_board_title{ padding-bottom: 37px}
+ .dart_regulation_info_btn {position: absolute;right: 0;bottom: 16px;width: 212px;}
+ .dart_regulation_info_btn span{top: -1px}
+ html.ie .dart_regulation_info_btn span {top:0;}
+
+.sub_investor_dart .jt_list_count, .jt_list_last_update {margin-top:19px;}
+html.ie .sub_investor_dart .jt_list_count, 
+html.ie .jt_list_last_update {display:inline-block; margin-top:15px;}
+html.desktop.ratio1_5 .sub_investor_dart .jt_list_count, 
+html.desktop.ratio1_5 .jt_list_last_update {margin-top:14px;}
+/*
+.page-template-investors-notice .main_container{ background:#f4f4f4;position: relative;}
+.sub_investors_notice .jt_news_list_row h3,
+.sub_investors_notice .jt_news_list_row time { padding-top: 24px; padding-bottom: 24px;}
+.desktop .sub_investors_notice .jt_news_list_row:hover { background: #fafafa;}
+.investors_notice_source { font-size: 13px; letter-spacing: -0.01em; color: #666;}
+.sub_investors_notice .jt_news_list_row .jt_arrow_btn{margin-left: 9px;-webkit-transform: translate(0,0);-ms-transform: translate(0,0);transform: translate(0,0);}
+.sub_investors_notice .jt_arrow_btn:after {content:'\e93e';font-size: 14px;position: relative;top: 1px;}
+
+.sub_investors_notice .article_type_03_header_bubble_01 { margin-top: 255px; margin-left: -1182px;}
+.sub_investors_notice .article_type_03_header_bubble_02 { margin-left: 459px; margin-top: -254px;}
+.sub_investors_notice .article_type_03_header_bubble_03 { margin-top: 0; top: auto; bottom: -270px; margin-left: -527px;}
+*/
+
+
+
+
+/* **************************************** *
+ * 주가정보
+ * **************************************** */
+.page-template-investors-stock .main_container {background: #f4f4f4;}
+.article_type_03.sub_investors_stock .article_title {margin-top: -4px;}
+
+.sub_investors_stock .article_type_03_header_bubble_01{ margin-left: -1152px; margin-top: -55px;}
+.sub_investors_stock .article_type_03_header_bubble_02{ margin-left: 459px; margin-top: -255px;}
+
+/* ICON */
+.jtstock_icon {display: inline-block;margin-top: -2px;padding-right: 8px;vertical-align: middle; line-height:0}
+.jtstock_icon:after {font-family: 'jt-font';font-size: 22px;font-weight: normal;font-style: normal;line-height: 0;height: 0;width: 0px;display: block;}
+.jtstock_up .jtstock_icon:after {content: '';color: #f52f23;border: 7px solid transparent;border-bottom: 10px solid #f52f23;}
+.jtstock_down .jtstock_icon:after {content: "";color: #2399cb;border: 7px solid transparent;border-top: 10px solid #2399cb;}
+.jtstock_steady .jtstock_icon:after {content: '\e941';color: #aaa;}
+
+.jtstock_horizontal_list .jtstock_icon:after{content:"";border-width: 5px;border-bottom-width: 8px;position: relative;left: -2px;}
+.jtstock_up.jtstock_horizontal_list .jtstock_icon:after {top: -2px;}
+.jtstock_down.jtstock_horizontal_list .jtstock_icon:after {top: 2px; border-top-width: 8px;}
+
+.jtstock_up_or_down.jtstock_up .jtstock_icon:after { border-width: 5px; border-bottom-width: 8px; top: -2px; position: relative;}
+.jtstock_up_or_down.jtstock_down .jtstock_icon:after { border-width: 5px; border-top-width: 8px; top: 2px; position: relative;}
+.jtstock_up_or_down.jtstock_up { color: #f52f23;}
+.jtstock_up_or_down.jtstock_down { color: #2399cb;}
+
+/* Head */
+.jtstock_head {margin-bottom: 10px; padding-top: 5px}
+.jtstock_title {display: inline-block;vertical-align: middle;font-size: 27px;font-weight: 600;line-height: 1.25;letter-spacing: -0.05em;}
+.jtstock_price_time {display: inline-block;vertical-align: bottom;margin-left: 24px;margin-top: 9px;float: right;}
+.jtstock_price_time time {padding-left: 21px;position: relative;font-size: 15px;letter-spacing: 0.01em;font-weight: 600;color: #0a0a0a;}
+.jtstock_price_time time span{letter-spacing: -0.025em; font-size: 15px;}
+
+/* 현재가 */
+.jtstock_price_table {display: table;width: 100%;border-top: 2px solid #0a0a0a;}
+.jtstock_price_cell {display: table-cell;width: 50%;padding: 29px 0 30px;vertical-align: middle;font-size: 0;border-bottom: 1px solid #eaeaea;}
+.jtstock_price_cell:after {content:'';display:table; clear :both;}
+.jtstock_price_cell:nth-child(1) {padding-right: 40px;border-right: 1px solid #eaeaea;}
+.jtstock_price_cell:nth-child(2) {padding-left: 59px;}
+.jtstock_value {display: inline-block;width: 59%;padding-right: 20px;margin-top:-8px;vertical-align: middle;text-align: center;line-height: 1;}
+.jtstock_value.jtstock_up {color: #f52f23;}
+.jtstock_value.jtstock_down {color: #2399cb;}
+.jtstock_value.jtstock_steady {color: #aaa;}
+.jtstock_value b {display: inline-block;vertical-align: middle;font-size: 52px;font-weight: 600;margin-left: 20px;}
+.jtstock_value .jtstock_icon {margin-top: 0;padding-right: 0;position: relative;left: -11px;top:0px;}
+.jtstock_value .jtstock_icon:after {font-size: 26px;}
+.jtstock_value.jtstock_down .jtstock_icon{ top: 6px;}
+.jtstock_value.jtstock_steady .jtstock_icon{ top: 4px;}
+
+.jtstock_horizontal_list {display: inline-block;width: 37.5%;vertical-align: middle;line-height: 1;}
+.jtstock_horizontal_list > li {display: table;width: 100%;border-bottom: 1px solid #eaeaea;}
+.jtstock_horizontal_list > li:last-child {border-bottom: none;}
+.jtstock_horizontal_list > li > b {display: table-cell;width: 40%;padding: 20px 0;vertical-align: middle;font-size: 18px;font-weight: 500;letter-spacing: -0.01em;color: #080a14;}
+.jtstock_horizontal_list > li > span {display: table-cell;width: 60%;padding: 18px 0;vertical-align: middle;font-size: 18px;font-weight: 400;text-align: right;color: #666;}
+.jtstock_horizontal_list > li > span { color: #f52f23}
+.jtstock_horizontal_list.jtstock_down > li > span { color:#2399cb;}
+
+.jtstock_vertical_list {text-align: center;}
+.jtstock_vertical_list > li {float: left;width: 21.6%;margin-right: 4.435%;}
+.jtstock_vertical_list > li:last-child {margin-right: 0;}
+.jtstock_vertical_list > li > b {display: block;padding-bottom: 15px;font-size: 18px;letter-spacing: -0.01em;font-weight: 500;color: #080a14;border-bottom: 1px solid #eaeaea;}
+.jtstock_vertical_list > li > span {display: block;padding-top: 17px;font-size: 18px;font-weight: 400;color: #666;}
+/*.jtstock_vertical_list > li:last-child > span {color:var(--color-primary);}*/
+
+/* 그래프 */
+.jtstock_chart {margin: 58px 0 49px;position:relative; height: 471px;}
+.jtstock_chart #time{display: none;}
+.jtstock_chart iframe {width: -webkit-calc(100% + 40px);width: calc(100% + 40px);height: 100%;position: absolute;top: 0;left: -20px;}
+
+/* 테이블 메뉴 */
+.jtstock_table_tab_menu {margin-left: -20px;margin-top: 64px;/*margin-bottom: 5px;*/}
+.jtstock_table_tab_menu:after{ display: table; clear: both; content: "";}
+.jtstock_table_tab_menu li { float: left;}
+.jtstock_table_tab_menu li a {padding: 11px 20px 10px;font-size: 18px;text-align: center;display: inline-block;color: #080a14;font-weight: 700;}
+.jtstock_table_tab_menu li a:hover,
+.jtstock_table_tab_menu li.active a {color: #f52f23}
+.jtstock_table_tab_menu li{ position:relative;}
+.jtstock_table_tab_menu li:first-child:before { content: ''; display: block; width: 1px; height: 13px; position: absolute; right: 0; top: 50%; margin-top:2px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); background: #ddd;}
+html.edge .jtstock_table_tab_menu li:first-child:before {margin-top:0;}
+
+/* 테이블 */
+.jtstock_table_outer:after {content: '';display: table;clear: both;}
+.jtstock_table_outer .jtstock_info_table td:first-child{ font-size:18px}
+.jtstock_table_outer .jtstock_info_table td:first-child {width: 43%;padding: 23px 32px 25px;color: #0a0a0a;}
+.jtstock_table_outer .jtstock_info_table td:last-child {width: 57%;padding: 23px 31px; }
+html.ie .jtstock_table_outer .jtstock_info_table td:first-child{padding-top:26px; padding-bottom:22px;}
+
+.jtstock_table_column {float: left;width: 48.5%;}
+.jtstock_table_column:first-child {margin-right: 3%;}
+.jtstock_table {width: 100%;position: relative;border-top: 2px solid #222;table-layout: fixed;}
+.jtstock_table caption {width: 1px;height: 1px;position: absolute;top: 0;left: 0;font-size: 0;line-height: 0;overflow: hidden;}
+.jtstock_table th {text-align:center;padding: 24px 30px;position: relative;vertical-align: middle;font-size: 17px;font-weight: 600;border-bottom: 2px solid #ddd;width: 50%;}
+.jtstock_table tbody th{ padding: 19px 30px;}
+.jtstock_table tbody > tr:first-child th:before {content: '';display: block;width: 1px;height: 17px;position: absolute;left: 0;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);background: #ddd;}
+.jtstock_table tbody > tr:first-child th:first-child:before {display: none;}
+.jtstock_table td {padding: 23px 30px;vertical-align: middle;font-size: 16px;border-bottom: 1px solid #eaeaea;border-left: 1px solid #eaeaea;}
+.jtstock_table td:first-child {border-left: none;}
+.jtstock_table td b {font-weight: 600;color: #222;}
+
+.jtstock_table td span.point_up {color: #f52f23;}
+.jtstock_table td span.point_down {color: #0f59a9;}
+
+.jtstock_table_tab_content > div{display: none;}
+.jtstock_table_tab_content > div.jtstock_table_tab_content_01{ display: block;}
+.jtstock_info_table td:first-child {width: 25%;padding: 24px 40px 27px;font-weight: 700;text-align: left;}
+.jtstock_info_table td:last-child {width: 36%;padding: 23px 43px;text-align: right;letter-spacing: 0em;}
+.jtstock_info_table_01 thead th {border-bottom-width: 1px;font-size: 18px;}
+.jtstock_info_table_01 tbody td,
+.jtstock_info_table_01 tbody td:first-child,
+.jtstock_info_table_01 tbody td:last-child{padding: 19px 34px 20px;}
+.jtstock_info_table_01 tbody td:first-child{text-align: center;font-size: 17px;font-weight: 400;}
+html.ie .jtstock_info_table_01 tbody td, html.ie .jtstock_info_table_01 tbody td:first-child, html.ie .jtstock_info_table_01 tbody td:last-child {padding-top:22px; padding-bottom:17px;}
+
+
+.jtstock_quantity_table th {text-align: center;background: #eee;padding: 23px 10px;}
+.jtstock_quantity_table td {width: 33.33%;text-align: right;}
+.jtstock_quantity_table tr:last-child td {background: #e8e8e8;}
+.jtstock_quantity_table tr:last-child td:nth-child(2) {text-align: center;}
+.jtstock_quantity_table tr:last-child td:nth-child(3) b {color: #f52f23;}
+
+.jtstock_info_table_01 { width: 50%; float: left; clear: none;}
+.jtstock_info_table_01:first-child{ border-right:1px solid #eaeaea}
+.jtstock_table_tab_content_01:after { content:""; clear:both; display:table}
+
+.jtstock_info_table_02 td {text-align: center;padding-left: 5px;padding-right: 5px;}
+.jtstock_info_table_02 td:first-child {text-align: left;width: 12%;}
+.jtstock_info_table_02 td:last-child { width: 24.3%;}
+.jtstock_info_table_02 td.jtstock_up_or_down {text-align: left;padding-left: 3.1%;padding-right: 10px;}
+.jtstock_info_table_02 thead td {font-weight:500;}
+table.jtstock_info_table_02 tbody td {letter-spacing: 0;text-align: right;padding-right: 35px;}
+
+.jtstock_info_table tbody td {text-align: center;}
+
+/* 에러 */
+.jtstock_error {padding: 140px 0;font-size: 0;line-height: 1;text-align: center;}
+.jtstock_error i {display: inline-block;font-size: 0;font-style: normal;}
+.jtstock_error i:after {content: '';display: block;font-family: 'jt-font';content: '\e948';font-size: 65px;font-weight: normal;line-height: 1;color: #0f59a9;}
+.jtstock_error p {padding-top: 28px;padding-left: 0.5em;font-size: 16px;font-weight: 400;line-height: 1.75;letter-spacing: 0.5em;color: #222;}
+.jtstock_error p span {color: #0f59a9;}
+
+
+
+/* **************************************** *
+ * 재무정보
+ * **************************************** */
+.page-template-investors-jemu .main_container {background: #f4f4f4;}
+.sub_investors_jemu .article_type_03_header_bubble_01 {margin-left: -998px;margin-top: -181px;}
+.sub_investors_jemu .article_type_03_header_bubble_02 {margin-left: 840px;margin-top: 200px;}
+
+/* head */
+.financial_head {padding: 3px 0 49px;font-size: 0;}
+.financial_title {display: inline-block;vertical-align: middle;font-size: 27px;font-weight: 600;line-height: 1.25;letter-spacing: -0.025em;}
+.financial_desc {display: inline-block;vertical-align: bottom;padding-left: 24px;font-size: 16px;position: relative;top: -4px;color: #080a14;}
+
+/* Container */
+#jt_chart_outer {position: relative;}
+#jt_chart {width: 100%;height: 100%;position: relative;}
+#jt_chart:after {content: '';display: block;clear: both;}
+
+.financial_graph_wrap {position: relative;z-index: 1;}
+.financial_chart {height: 458px;position: relative;}
+
+.financial_table_unit.financial_graph_unit  {position:absolute;top: -40px;right:0;padding-bottom: 0;}
+
+/* Category */
+#jt_chart_category {position: absolute;right: 0;top: -68px;font-size: 0;line-height: 1;text-align: right;}
+#jt_chart_category > li {display: inline-block;padding-left: 34px;position: relative;vertical-align: top;}
+#jt_chart_category > li:first-child {padding-left: 0;}
+#jt_chart_category > li > span {display: inline-block;vertical-align: middle;font-size: 14px;}
+#jt_chart_category > li > span:before {content: '';display: inline-block;vertical-align: baseline;width: 12px;height: 12px;margin-right: 6px;border-radius: 50%;}
+#jt_chart_category > li:nth-child(1) > span:before {background: #f52f23 url(../images/investors/financial-icon-01.png) no-repeat center center;background-size: cover;}
+#jt_chart_category > li:nth-child(2) > span:before {background: #333 url(../images/investors/financial-icon-02.png) no-repeat center center;background-size: cover;}
+#jt_chart_category > li:nth-child(3) > span:before {background: #aaa;}
+
+/* Title */
+/* .jt_chart_title {padding-top: 32px;padding-left: 0.5em;font-size: 18px;font-weight: 600;text-align: center;letter-spacing: 0.5em;} */
+
+/* Chart board */
+#jt_chart_board {float: right;width: -webkit-calc(100% - 61px);width: calc(100% - 61px);height: 100%;}
+#jt_chart_ground_wrap {float: left;width: 100%;height: -webkit-calc(100% - 54px);height: calc(100% - 54px);position: relative;border-bottom: 1px solid #e8e8e8;}
+#jt_chart_ground {float: left;width: 100%;height: 100%;position: relative;z-index: 2;}
+#jt_chart_ground > li {float: left;width: 100%;height: 100%;font-size: 0;line-height: 1;text-align: center;position: relative;}
+.jt_chart_col_1 #jt_chart_ground > li {width: 100%;}
+.jt_chart_col_2 #jt_chart_ground > li {width: 50%;}
+.jt_chart_col_3 #jt_chart_ground > li {width: 33.33%;}
+.jt_chart_col_4 #jt_chart_ground > li {width: 25%;}
+.jt_chart_col_5 #jt_chart_ground > li {width: 20%;}
+
+/* Chart line */
+#jt_chart_ground_wrap .line {width: 100%;height: 1px;position: absolute;left: 0;background: #ebebeb;z-index: 1;}
+#jt_chart_ground_wrap .line:nth-child(1) {top: 6px;}
+#jt_chart_ground_wrap .line:nth-child(2) {top: -webkit-calc(20% + 6px);top: calc(20% + 6px);}
+#jt_chart_ground_wrap .line:nth-child(3) {top: -webkit-calc(40% + 5px);top: calc(40% + 5px);}
+#jt_chart_ground_wrap .line:nth-child(4) {top: -webkit-calc(60% + 5px);top: calc(60% + 5px);}
+#jt_chart_ground_wrap .line:nth-child(5) {top: -webkit-calc(80% + 3px);top: calc(80% + 3px);}
+
+/* Chart item */
+#jt_chart_ground .items {width: 100%;height: 100%;position: absolute;bottom: 0;left: 0;}
+#jt_chart_ground .item {display: inline-block;width: 57px;height: 100%;position: relative;}
+#jt_chart_ground .item .bar {width: 18px;height: 0%;position: absolute;bottom: 0;left: 50%;margin-left: -7px;}
+#jt_chart_ground .item .annotation {display: block;position: absolute;top: -19px;left: 50%;-webkit-transform: translateX(-50%);-ms-transform: translateX(-50%);transform: translateX(-50%);font-size: 13px;letter-spacing: 0;}
+#jt_chart_ground .item:nth-child(1) {color: #f52f23;}
+#jt_chart_ground .item:nth-child(1) .bar {background: #f52f23 url(../images/investors/financial-bar-01.jpg) repeat;}
+#jt_chart_ground .item:nth-child(1) .annotation {top: -34px;font-size: 21px;font-weight: 600;}
+#jt_chart_ground .item:nth-child(2) {color: #222;}
+#jt_chart_ground .item:nth-child(2) .bar {background: #333 url(../images/investors/financial-bar-02.jpg) repeat;}
+#jt_chart_ground .item:nth-child(3) {color: #888;}
+#jt_chart_ground .item:nth-child(3) .bar {background: #aaaaaa;}
+
+/* Horizontal Axis */
+#jt_chart_haxis {float: left;width: 100%;height: 54px;letter-spacing: 0;}
+#jt_chart_haxis > span {float: left;font-size: 20px;line-height: 79px;text-align: center;font-weight: 600;}
+.jt_chart_col_1 #jt_chart_haxis > span {width: 100%;}
+.jt_chart_col_2 #jt_chart_haxis > span {width: 50%;}
+.jt_chart_col_3 #jt_chart_haxis > span {width: 33.33%;}
+.jt_chart_col_4 #jt_chart_haxis > span {width: 25%;}
+.jt_chart_col_5 #jt_chart_haxis > span {width: 20%;}
+
+/* Vertical Axis */
+#jt_chart_vaxis {float: left;width: 51px;height: -webkit-calc(100% - 61px);height: calc(100% - 61px);margin-right: 10px;position: relative;}
+#jt_chart_vaxis > span {position: absolute;right: 0;font-size: 13px;line-height: 1;color: #666;letter-spacing: 0;}
+#jt_chart_vaxis > span:nth-child(1) {top: 0;}
+#jt_chart_vaxis > span:nth-child(2) {top: 20%;}
+#jt_chart_vaxis > span:nth-child(3) {top: 40%;}
+#jt_chart_vaxis > span:nth-child(4) {top: 60%;}
+#jt_chart_vaxis > span:nth-child(5) {top: 80%;}
+#jt_chart_vaxis > span:nth-child(6) {bottom: -13px;}
+
+/* Table */
+.financial_data_wrap {padding-top: 63px;position: relative;}
+.financial_data_wrap:after {content: "";display: table;clear: both;}
+.financial_table_unit {padding-bottom: 22px;font-size: 14px;text-align: right;color: #666;top: 5px;}
+.financial_table {width: 100%;position: relative;border-top: 2px solid #222;table-layout: fixed;}
+.financial_table caption {width: 1px;height: 1px;position: absolute;top: 0;left: 0;font-size: 0;line-height: 0;overflow: hidden;}
+.financial_table th {width: 25%;padding: 20px 30px;position: relative;font-size: 18px;font-weight: 600;text-align: center;color: #0a0a0a;background: #fff;border-bottom: 2px solid #ddd;}
+.financial_table th:before {content: '';display: block;width: 1px;height: 17px;position: absolute;left: 0;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);background: #ddd;}
+.financial_table th:first-child:before {display: none;}
+.financial_table th:not(:first-child) {letter-spacing:0;}
+.financial_table td {padding: 20px 30px 22px;font-size: 16px;text-align: right;border-bottom: 1px solid #eaeaea;border-left: 1px solid #eaeaea;letter-spacing: -0.025em;vertical-align: middle;}
+.financial_table td:first-child {padding: 19px 29px 19px;text-align: left;color: #0a0a0a;border-left: none;font-size: 17px;letter-spacing: -0.05em;}
+.financial_table tr.financial_total td {font-weight: 700;color: #0a0a0a;background: #fbfbfb;}
+.financial_table tr.financial_total td:not(:first-child) {letter-spacing:0;}
+.financial_table tr.financial_total td:first-child {text-align: center;font-weight: 600;letter-spacing: -0.05em;}
+.financial_table tr.financial_central_alignment td {vertical-align: middle;}
+html.ie .financial_table th {padding-top:21px; padding-bottom:22px;}
+html.ie .financial_table td:first-child {padding: 18px 29px 20px;}
+
+.financial_table_comment {text-align:right;font-size: 14px;color: #666;margin-top: 7px;margin-bottom:-4px;}
+
+#financial_part_table.financial_table th:last-child {letter-spacing:inherit;}
+
+/* Filter */
+.financial_table_container { float: right; width: -webkit-calc(100% - 265px); width: calc(100% - 265px); }
+
+.financial_data_filter {float: left;width: 265px;padding-top: 26px;}
+.financial_data_filter nav { margin-left: -15px;}
+.financial_data_filter nav button { cursor: pointer; background: none;border: none;font-size: 18px;padding: 10px 16px;position: relative;letter-spacing: -0.05em; font-weight: 500;}
+.financial_data_filter nav button.active { color: #f52f23;}
+.financial_data_filter nav button:before {content: "";width: 1px;height: 13px;background: #ddd;position: absolute;top: 18px;left: -1px;}
+.financial_data_filter nav button:first-child:before { display: none;}
+html.ie .financial_data_filter nav {font-size:0;}
+html.ie .financial_data_filter nav button:before {left:0; top:16px;}
+html.edge .financial_data_filter nav button:before {top:17px;}
+.financial_data_filter nav button span {position:relative;}
+
+.financial_data_filter_year {max-width: 147px;margin-left: -11px;margin-top: 16px;}
+.financial_data_filter_year .selectric .label {font-size: 27px;color: #0a0a0a;letter-spacing: 0;font-weight: 600;}
+.financial_data_filter_year .selectric { border: none;}
+.financial_data_filter_year .selectric-items { border: none; -webkit-box-shadow: 0 0 0 1px #0a0a0a; box-shadow: 0 0 0 1px #0a0a0a;margin-top: 1px;}
+html.desktop .financial_data_filter_year .selectric-items li:hover,
+.financial_data_filter_year .selectric-items li.selected { background: none;}
+.financial_data_filter_year .selectric:after,
+.financial_data_filter_year .selectric-open .selectric:after{ border: none; /*border-bottom: 1px solid var(--color-dark);*/}
+.financial_data_filter_year .selectric-items li { font-size: 17px; padding: 10px 15px;}
+.financial_data_filter_year .selectric-items li:first-child { padding-top: 18px;}
+.financial_data_filter_year .selectric-items li.last { padding-bottom: 18px;}
+
+.financial_data_filter_year .selectric-above.selectric-open .selectric { border-top: 1px solid #0a0a0a; border-bottom: none;}
+.financial_data_filter_year .selectric-above.selectric-open .selectric:after { opacity:0}
+
+html.mobile .financial_data_filter_year {margin-left:0;margin-top: 20px;position:relative;}
+html.mobile .financial_data_filter_year:before {width: 42px;position: absolute;top: -4px;right: 14px;font-family: 'jt-font';content: '\e93d';font-size: 15px;text-align: center;line-height: 50px;color: #0a0a0a;}
+html.mobile .financial_data_filter_year select {-webkit-appearance: none;-moz-appearance: none;appearance: none;margin: 0;background: transparent;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;outline: none;-webkit-box-shadow: none;box-shadow: none;opacity: 1;border:none;font-size: 27px;color: #0a0a0a;letter-spacing: 0;font-family: 'Montserrat', 'Noto Sans KR', sans-serif;font-weight: 600;width: 100%;}
+html.mobile .financial_data_filter_year select option {font-size:17px; color:#888;}
+
+
+
+/* **************************************** *
+ * IR
+ * **************************************** */
+.jt_ir_list_wrap{ padding-top:9px}
+.ir_list { display: block; clear: both; border-top: 1px solid #eaeaea;}
+
+.ir_list_num,
+.ir_list_cat,
+.ir_list_date,
+.ir_list_arrow {position:absolute;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);transform: translateY(-50%);}
+
+.ir_list .jt_board_notice {display: inline-block;width: 60px;height: 30px;font-size: 14px;font-weight:600;line-height: 30px;color: #fff;background: #f52f23; position: relative; top: 0px;}
+.ir_list_num {left: 14px;font-size: 16px;font-weight:600;color: #888;text-align:center;width: 100px;}
+.ir_list_cat {left: 132px;font-size: 18px;width: 140px;color: #0a0a0a;}
+.ir_list_date {right: 111px;font-size: 14px;color: #0a0a0a;letter-spacing: 0.015em;font-weight: 500;}
+.ir_list_arrow{right: 51px;margin-top: -15px;-webkit-transform: scale(1.2);-ms-transform: scale(1.2);transform: scale(1.2);}
+html.ie .ir_list .jt_board_notice {line-height:28px;}
+html.safari .ir_list .jt_board_notice {line-height:32px;}
+
+.ir_accordion_header {display: block;position: relative;border-bottom: 1px solid #eaeaea;color: #080a14;}
+.ir_accordion_content {display: none;background: #f8f8f8; border-bottom: 1px solid #eaeaea;}
+.ir_list_title {padding: 39px 220px  38px 356px;}
+.ir_list_title h2{font-size: 20px;font-weight: 500;}
+
+.ir_list_download {position: absolute;right: 40px;top: 50%;margin-top: -28px;}
+.ir_list_download .jt_btn_icon span {padding-right: 0;font-size: 16px;font-weight: 500;}
+.ir_list_download .jt_btn_icon.jt_icon_download svg{ margin-top: -6px;}
+html.ie .ir_list_download {margin-top:-30px;}
+html.ie .ir_accordion_content .jt_btn_icon {padding-top:19px; padding-bottom:19px;}
+
+.ir_accordion_content li { position: relative; border-bottom: 1px solid #eaeaea;}
+.ir_accordion_content li:last-child { border-bottom: none;}
+.ir_accordion_content h3 {padding: 30px 300px 35px 133px;font-size: 17px;color: #080a14}
+.ir_accordion_content .jt_btn_icon {min-width: 174px;padding: 17px 31px 17px 26px;text-align: left;}
+.ir_list_arrow svg {-webkit-transition: 0.3s;transition: 0.3s;}
+.active .ir_list_arrow svg { -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg);}
+html.desktop .ir_list .ir_accordion_header:hover,
+html.desktop .ir_list .ir_accordion_header:hover .ir_list_title h2,
+html.desktop .ir_list .ir_accordion_header:hover .ir_list_date,
+html.desktop .ir_list .ir_accordion_header:hover .ir_list_num,
+html.desktop .ir_list .ir_accordion_header:hover .ir_list_cat{ color: #f52f23;}
+html.desktop .ir_list .ir_accordion_header:hover .ir_list_arrow path{fill: #f52f23;}
+html.ie .ir_accordion_content h3 {padding-top:33px; padding-bottom:32px;}
+		
+
+
+
+/* **************************************** *
+ * 재무정보
+ * **************************************** */
+.page-template-jemu .selectric .button {width: 47px;}
+.page-template-jemu .selectric .button:after {content: '\e93d';font-size: 15px;}
+html.ie .page-template-jemu .selectric .button:after {top:-5px;}
+
+
+
+
+/* **************************************** *
+ * 주주환원
+ * **************************************** */
+.investor_return_title { font-size: 27px; font-weight: 700; color: #0a0a0a; margin-bottom: 15px; margin-top: -10px; display:inline-block;}
+.investor_return_desc {font-size:15px; font-weight: 600; display: inline-block; vertical-align: bottom; margin-top: 9px; float: right;}
+.sub_investor_return .jtstock_table td:not(:first-child) { text-align:right;}
+
+
+
+
+
+
+
